@@ -8,7 +8,7 @@ pre: " <b> 1.1. </b> "
 
 {{% notice info %}}
 ℹ️ **Note:** This worklog summarizes the activities of Week 1. Since the report was submitted later than planned, the dates have been adjusted to reflect the actual progress.
-{{% /notice %}} test
+{{% /notice %}}
 
 ### Week 1 Goals:
 
