@@ -41,32 +41,6 @@
                 href="https://thienluhoan.github.io/workshop-template/vi/"
                 />
   </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.1-blog1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/"
-                />
-  </url><url>
-    <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.2-blog2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/"
-                />
-  </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.3-blog3/</loc>
     <lastmod>2025-09-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -520,6 +494,30 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://thienluhoan.github.io/workshop-template/vi/7-feedback/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.1-blog1/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.1-blog1/"
+                />
+  </url><url>
+    <loc>https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://thienluhoan.github.io/workshop-template/3-blogstranslated/3.2-blog2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://thienluhoan.github.io/workshop-template/vi/3-blogstranslated/3.2-blog2/"
                 />
   </url><url>
     <loc>https://thienluhoan.github.io/workshop-template/vi/categories/</loc>
