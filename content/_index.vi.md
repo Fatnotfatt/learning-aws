@@ -7,13 +7,13 @@ chapter: false
 
 # Báo cáo thực tập
 ### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+&emsp; **Họ và tên:** Võ Trường Thành Phát
 
-&emsp; **Số điện thoại:** 0989888999
+&emsp; **Số điện thoại:** 0707712750
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** phatvttse171823@fpt.edu.vn
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+&emsp; **Trường:** Đại học FPT TP.HCM
 
 &emsp; **Ngành:** Công nghệ thông tin
 
