@@ -27,6 +27,7 @@ body {
   color: var(--MAIN-TEXT-color) !important;
 }
 
+
 textarea:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,

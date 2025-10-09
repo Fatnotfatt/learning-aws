@@ -13,15 +13,15 @@ chapter: false
 {{% /notice %}}
 
 ### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+&emsp; **Full Name:** Võ Trường Thành Phát
 
-&emsp; **Phone Number:** 0989888999 
+&emsp; **Phone Number:** 0707712750     
 
-&emsp; **Email:** Anguyenvan@gmail.com
+&emsp; **Email:** phatvttse171823@fpt.edu.vn
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
+&emsp; **University:** FPT University
 
-&emsp; **Major:** Information Technology
+&emsp; **Major:** Software Engineer
 
 &emsp; **Class:** AWS082025
 
