@@ -506,9 +506,6 @@ select[multiple="multiple"]:focus {
   margin: 3rem auto;
   display: block;
   text-align: center;
-    width: 60%;
-    max-width: 600px;
-    height: 530px;
 }
 
 #body img.border,

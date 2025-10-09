@@ -27,11 +27,6 @@ body {
   color: var(--MAIN-TEXT-color) !important;
 }
 
-.image-up {
-    width: 60%;
-    max-width: 600px;
-    height: 530px;
-}
 
 textarea:focus,
 input[type="email"]:focus,
