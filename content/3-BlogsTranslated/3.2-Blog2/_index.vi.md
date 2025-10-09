@@ -5,124 +5,207 @@ weight: 1
 chapter: false
 pre: " <b> 3.2. </b> "
 ---
+---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-# Bắt đầu với healthcare data lakes: Sử dụng microservices
-
-Các data lake có thể giúp các bệnh viện và cơ sở y tế chuyển dữ liệu thành những thông tin chi tiết về doanh nghiệp và duy trì hoạt động kinh doanh liên tục, đồng thời bảo vệ quyền riêng tư của bệnh nhân. **Data lake** là một kho lưu trữ tập trung, được quản lý và bảo mật để lưu trữ tất cả dữ liệu của bạn, cả ở dạng ban đầu và đã xử lý để phân tích. data lake cho phép bạn chia nhỏ các kho chứa dữ liệu và kết hợp các loại phân tích khác nhau để có được thông tin chi tiết và đưa ra các quyết định kinh doanh tốt hơn.
-
-Bài đăng trên blog này là một phần của loạt bài lớn hơn về việc bắt đầu cài đặt data lake dành cho lĩnh vực y tế. Trong bài đăng blog cuối cùng của tôi trong loạt bài, *“Bắt đầu với data lake dành cho lĩnh vực y tế: Đào sâu vào Amazon Cognito”*, tôi tập trung vào các chi tiết cụ thể của việc sử dụng Amazon Cognito và Attribute Based Access Control (ABAC) để xác thực và ủy quyền người dùng trong giải pháp data lake y tế. Trong blog này, tôi trình bày chi tiết cách giải pháp đã phát triển ở cấp độ cơ bản, bao gồm các quyết định thiết kế mà tôi đã đưa ra và các tính năng bổ sung được sử dụng. Bạn có thể truy cập các code samples cho giải pháp tại Git repo này để tham khảo.
+# **Sử dụng workflow Apache Airflow để điều phối xử lý dữ liệu trên Amazon SageMaker Unified Studio**
 
 ---
 
-## Hướng dẫn kiến trúc
+**của Vinod Jayendra , Kamen Sharlandjiev , Sean Bjurstrom và Suba Palanisamy**
 
-Thay đổi chính kể từ lần trình bày cuối cùng của kiến trúc tổng thể là việc tách dịch vụ đơn lẻ thành một tập hợp các dịch vụ nhỏ để cải thiện khả năng bảo trì và tính linh hoạt. Việc tích hợp một lượng lớn dữ liệu y tế khác nhau thường yêu cầu các trình kết nối chuyên biệt cho từng định dạng; bằng cách giữ chúng được đóng gói riêng biệt với microservices, chúng ta có thể thêm, xóa và sửa đổi từng trình kết nối mà không ảnh hưởng đến những kết nối khác. Các microservices được kết nối rời thông qua tin nhắn publish/subscribe tập trung trong cái mà tôi gọi là “pub/sub hub”.
-
-Giải pháp này đại diện cho những gì tôi sẽ coi là một lần lặp nước rút hợp lý khác từ last post của tôi. Phạm vi vẫn được giới hạn trong việc nhập và phân tích cú pháp đơn giản của các **HL7v2 messages** được định dạng theo **Quy tắc mã hóa 7 (ER7)** thông qua giao diện REST.
-
-**Kiến trúc giải pháp bây giờ như sau:**
-
-> *Hình 1. Kiến trúc tổng thể; những ô màu thể hiện những dịch vụ riêng biệt.*
+**22 THÁNG 9 NĂM 2025**
 
 ---
 
-Mặc dù thuật ngữ *microservices* có một số sự mơ hồ cố hữu, một số đặc điểm là chung:  
-- Chúng nhỏ, tự chủ, kết hợp rời rạc  
-- Có thể tái sử dụng, giao tiếp thông qua giao diện được xác định rõ  
-- Chuyên biệt để giải quyết một việc  
-- Thường được triển khai trong **event-driven architecture**
+Điều phối pipeline machine learning là công việc phức tạp, đặc biệt khi phần xử lý dữ liệu, huấn luyện mô hình và triển khai được thực hiện trên nhiều dịch vụ và công cụ khác nhau. Trong bài viết này, chúng tôi sẽ đi qua ví dụ thực tế “end-to-end” — xây dựng, thử nghiệm và chạy một pipeline ML sử dụng workflow của SageMaker thông qua giao diện SageMaker Unified Studio. Các workflow này được hỗ trợ bởi Amazon Managed Workflows for Apache Airflow (Amazon MWAA).
 
-Khi xác định vị trí tạo ranh giới giữa các microservices, cần cân nhắc:  
-- **Nội tại**: công nghệ được sử dụng, hiệu suất, độ tin cậy, khả năng mở rộng  
-- **Bên ngoài**: chức năng phụ thuộc, tần suất thay đổi, khả năng tái sử dụng  
-- **Con người**: quyền sở hữu nhóm, quản lý *cognitive load*
+Mặc dù SageMaker Unified Studio có trình xây dựng trực quan (low-code) để tạo workflow, bài viết này tập trung vào cách làm bằng code: viết và quản lý workflow như các DAG (Directed Acyclic Graph) bằng Python trong Apache Airflow.
+
+Chúng ta sẽ cùng xem ví dụ pipeline gồm các bước: ingest dữ liệu thời tiết và dữ liệu taxi, chuyển đổi & gộp dữ liệu, rồi dùng ML để dự đoán giá cước taxi — toàn bộ được điều phối qua SageMaker Unified Studio workflow.
 
 ---
 
-## Lựa chọn công nghệ và phạm vi giao tiếp
+## **Tổng quan giải pháp (Solution overview)**
 
-| Phạm vi giao tiếp                        | Các công nghệ / mô hình cần xem xét                                                        |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------ |
-| Trong một microservice                   | Amazon Simple Queue Service (Amazon SQS), AWS Step Functions                               |
-| Giữa các microservices trong một dịch vụ | AWS CloudFormation cross-stack references, Amazon Simple Notification Service (Amazon SNS) |
-| Giữa các dịch vụ                         | Amazon EventBridge, AWS Cloud Map, Amazon API Gateway                                      |
+![](images/image4.png)
 
----
+Giải pháp này minh họa cách dùng workflows trong SageMaker Unified Studio để điều phối pipeline từ dữ liệu đến mô hình ML trong một môi trường tập trung. Pipeline gồm các tác vụ sau:
 
-## The pub/sub hub
+1. Ingest & tiền xử lý dữ liệu thời tiết  
+   Sử dụng notebook trong SageMaker Unified Studio để ingest dữ liệu thời tiết giả lập, xử lý các thuộc tính như thời gian, nhiệt độ, lượng mưa, độ ẩm, tốc độ gió.
 
-Việc sử dụng kiến trúc **hub-and-spoke** (hay message broker) hoạt động tốt với một số lượng nhỏ các microservices liên quan chặt chẽ.  
-- Mỗi microservice chỉ phụ thuộc vào *hub*  
-- Kết nối giữa các microservice chỉ giới hạn ở nội dung của message được xuất  
-- Giảm số lượng synchronous calls vì pub/sub là *push* không đồng bộ một chiều
+2. Ingest, xử lý và hợp nhất dữ liệu taxi  
+   Sử dụng notebook thứ hai để ingest dữ liệu taxi NYC (bao gồm pickup time, drop-off time, khoảng cách, số lượng khách, tiền cước). Sau đó xử lý và join dữ liệu taxi & thời tiết, lưu kết quả lên Amazon S3 để dùng cho bước tiếp theo.
 
-Nhược điểm: cần **phối hợp và giám sát** để tránh microservice xử lý nhầm message.
+3. Huấn luyện và dự đoán mô hình ML  
+   Notebook thứ ba áp dụng kỹ thuật hồi quy (regression) để xây dựng mô hình dự đoán giá taxi dựa trên dữ liệu gộp. Mô hình sau đó được dùng để dự đoán giá cho các dữ liệu mới.
+
+Qua cách tiếp cận này, ETL (extract, transform, load) và các bước ML được điều phối trong cùng workflow, với khả năng theo dõi đầy đủ quá trình dữ liệu và đảm bảo tính tái tạo (reproducibility) thông qua workflow quản lý trong SageMaker Unified Studio.
 
 ---
 
-## Core microservice
+## **Chuẩn bị trước (Prerequisites)**
 
-Cung cấp dữ liệu nền tảng và lớp truyền thông, gồm:  
-- **Amazon S3** bucket cho dữ liệu  
-- **Amazon DynamoDB** cho danh mục dữ liệu  
-- **AWS Lambda** để ghi message vào data lake và danh mục  
-- **Amazon SNS** topic làm *hub*  
-- **Amazon S3** bucket cho artifacts như mã Lambda
+Trước khi xây workflow, bạn cần:
 
-> Chỉ cho phép truy cập ghi gián tiếp vào data lake qua hàm Lambda → đảm bảo nhất quán.
+1. Tạo một domain SageMaker Unified Studio — làm theo hướng dẫn của AWS.  
+   ( [mục Tạo miền Amazon SageMaker Unified Studio – thiết lập nhanh](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/create-domain-sagemaker-unified-studio-quick.html) )
 
----
+2. Đăng nhập domain SageMaker Unified Studio — dùng domain bạn đã tạo.  
+   (  [Truy cập Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-access-the-portal.html) )
 
-## Front door microservice
-
-- Cung cấp API Gateway để tương tác REST bên ngoài  
-- Xác thực & ủy quyền dựa trên **OIDC** thông qua **Amazon Cognito**  
-- Cơ chế *deduplication* tự quản lý bằng DynamoDB thay vì SNS FIFO vì:
-  1. SNS deduplication TTL chỉ 5 phút
-  2. SNS FIFO yêu cầu SQS FIFO
-  3. Chủ động báo cho sender biết message là bản sao
+3. Tạo một project trong SageMaker Unified Studio — trong phần tạo project, chọn profile “All capabilities” để hỗ trợ đầy đủ công năng workflow.  
+   ( [hướng dẫn tạo dự án.](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/getting-started-create-a-project.html) )
 
 ---
 
-## Staging ER7 microservice
+## **Thiết lập workflow environment**
 
-- Lambda “trigger” đăng ký với pub/sub hub, lọc message theo attribute  
-- Step Functions Express Workflow để chuyển ER7 → JSON  
-- Hai Lambda:
-  1. Sửa format ER7 (newline, carriage return)
-  2. Parsing logic  
-- Kết quả hoặc lỗi được đẩy lại vào pub/sub hub
+Bạn có thể dùng workflow trong SageMaker Unified Studio để thiết lập và chạy chuỗi tác vụ như notebooks, querybooks, jobs. Workflow được viết bằng code Python (Airflow DAG), sau đó bạn có thể truy cập UI Airflow từ SageMaker để theo dõi.
+
+Các bước cụ thể:
+
+1. Trong project của bạn, vào mục Compute → Workflow environment.
+
+2. Chọn Create environment để thiết lập môi trường workflow mới.
+
+    * Theo mặc định, SageMaker Unified Studio sẽ dùng loại môi trường mw1.micro — phù hợp cho thử nghiệm nhỏ.
+
+    * Nếu cần, bạn có thể override cấu hình mặc định (ví dụ tăng tài nguyên) khi tạo project hoặc chỉnh trong blueprint deployment settings.
+
+![](images/image3.png)
 
 ---
 
-## Tính năng mới trong giải pháp
+## **Phát triển workflow (Develop workflows)**
 
-### 1. AWS CloudFormation cross-stack references
-Ví dụ *outputs* trong core microservice:
-```yaml
-Outputs:
-  Bucket:
-    Value: !Ref Bucket
-    Export:
-      Name: !Sub ${AWS::StackName}-Bucket
-  ArtifactBucket:
-    Value: !Ref ArtifactBucket
-    Export:
-      Name: !Sub ${AWS::StackName}-ArtifactBucket
-  Topic:
-    Value: !Ref Topic
-    Export:
-      Name: !Sub ${AWS::StackName}-Topic
-  Catalog:
-    Value: !Ref Catalog
-    Export:
-      Name: !Sub ${AWS::StackName}-Catalog
-  CatalogArn:
-    Value: !GetAtt Catalog.Arn
-    Export:
-      Name: !Sub ${AWS::StackName}-CatalogArn
+Workflow cho phép bạn điều phối notebooks, querybooks, v.v. trong dự án. Bạn có thể viết DAG Python, test và chia sẻ với các thành viên khác.
 
+Ví dụ:
+
+1. Tải 3 notebook mẫu: Weather Data Ingestion, Taxi Ingest & Join, Prediction về máy bạn.
+
+2. Trong SageMaker Unified Studio, vào Build → JupyterLab, upload 3 notebook trên.  
+   ![](images/image6.png)
+3. Cấu hình space: dừng space hiện tại → đổi loại instance (ví dụ ml.m5.8xlarge) → khởi động lại space.
+
+4. Vào Build → Orchestration → Workflows, chọn “Create new workflow” → chọn “Create in code editor”.
+
+Trong editor, tạo file Python mới multinotebook\_dag.py trong thư mục src/workflows/dags. Dán đoạn mã DAG ví dụ sau (sửa \<REPLACE-OWNER\> và các đường dẫn notebook cho phù hợp):
+
+from airflow.decorators import dag  
+from airflow.utils.dates import days\_ago  
+from workflows.airflow.providers.amazon.aws.operators.sagemaker\_workflows import NotebookOperator
+
+WORKFLOW\_SCHEDULE \= '@daily'
+
+NOTEBOOK\_PATHS \= \[  
+'\<FULL\_PATH/Weather\_Data\_Ingestion.ipynb\>',  
+'\<FULL\_PATH/Taxi\_Weather\_Data\_Collection.ipynb\>',  
+'\<FULL\_PATH/Prediction.ipynb\>'  
+\]
+
+default\_args \= {  
+'owner': '\<REPLACE-OWNER\>',  
+}
+
+@dag(  
+dag\_id='workflow-multinotebooks',  
+default\_args=default\_args,  
+schedule\_interval=WORKFLOW\_SCHEDULE,  
+start\_date=days\_ago(2),  
+is\_paused\_upon\_creation=False,  
+tags=\['MLPipeline'\],  
+catchup=False  
+)  
+def multi\_notebook():  
+previous\_task \= None  
+for idx, notebook\_path in enumerate(NOTEBOOK\_PATHS, 1):  
+current\_task \= NotebookOperator(  
+task\_id=f"Notebook{idx}task",  
+input\_config={'input\_path': notebook\_path, 'input\_params': {}},  
+output\_config={'output\_formats': \['NOTEBOOK'\]},  
+wait\_for\_completion=True,  
+poll\_interval=5  
+)
+
+    if previous\_task:  
+      previous\_task \>\> current\_task
+
+    previous\_task \= current\_task
+
+multi\_notebook()
+
+5.
+    * NotebookOperator được dùng để chạy từng notebook, với dependencies để đảm bảo thứ tự thực thi.
+
+    * Bạn có thể tùy chỉnh WORKFLOW\_SCHEDULE (ví dụ @daily, @hourly, hoặc cron expression).
+
+6. Sau khi workflow environment được tạo và file DAG được sync vào dự án, các thành viên trong dự án có thể xem và chạy workflow chung.
+
+---
+
+## **Kiểm thử và giám sát workflow**
+
+1. Vào Build → Orchestration → Workflows, bạn sẽ thấy workflow đang chạy theo schedule hoặc được kích hoạt.  
+   ![](images/image2.png)
+
+2. Khi workflow hoàn thành, trạng thái chuyển sang “success”.  
+   ![](images/image1.png)
+
+3. Bạn có thể vào từng execution để xem chi tiết, logs từng task.  
+   ![](images/image5.png)
+
+4. Truy cập Airflow UI từ SageMaker để xem DAGs, lịch sử chạy, logs chi tiết.  
+   ![](images/image7.png)
+   ![](images/image9.png)
+
+---
+
+## **Kết quả & đầu ra**
+
+![](images/image10.png)
+
+Kết quả của mô hình được ghi ra thư mục kết quả trên Amazon S3. Bạn cần kiểm tra:
+
+* Độ chính xác dự đoán (prediction accuracy)
+
+* Sự nhất quán về quan hệ giữa các biến
+
+* Nếu có kết quả bất thường, cần xem lại bước xử lý dữ liệu, pipeline, giả định mô hình.
+
+---
+
+## **Dọn dẹp tài nguyên (Clean up)**
+
+Để tránh phát sinh chi phí không cần thiết, bạn nên xóa các tài nguyên tạo ra:
+
+1. Domain SageMaker Unified Studio
+
+2. Bucket S3 liên quan tới domain
+
+3. Các workflow environment, project nếu không dùng nữa
+
+---
+
+## **Kết luận**
+
+Trong bài viết này, chúng tôi đã minh họa cách bạn có thể sử dụng SageMaker Unified Studio để xây dựng workflow ML tích hợp, bao gồm:
+
+* Tạo project SageMaker Unified Studio
+
+* Dùng multi-compute notebook để xử lý dữ liệu
+
+* Xây workflow DAG bằng Python để điều phối toàn bộ pipeline
+
+* Chạy, giám sát workflow trong SageMaker Unified Studio
+
+SageMaker cung cấp bộ công cụ toàn diện để thực thi các bước từ chuẩn bị dữ liệu, huấn luyện mô hình đến deployment. Khi sử dụng qua SageMaker Unified Studio, các công cụ này được hợp nhất trong một môi trường làm việc duy nhất, giúp loại bỏ ma sát giữa các công cụ rời rạc.
+
+Khi các tổ chức xây dựng các ứng dụng dữ liệu phức tạp, các đội có thể dùng SageMaker \+ Unified Studio để hợp tác hiệu quả và vận hành AI/ML với độ tin cậy cao. Bạn có thể phát hiện dữ liệu, xây mô hình và điều phối workflow trong một môi trường được quản lý và có kiểm soát.
+
+---
+
+## **Về phần tác giả**
+
+![image8.jpg](images/image8.jpg)![](images/image8.png)
