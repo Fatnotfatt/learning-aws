@@ -1,58 +1,57 @@
 ﻿---
-title: "Week 5 Worklog"
-date: 2025-09-10
+title: "Worklog Week 5"
+date: 2025-10-04
 weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
+{{% notice warning %}}
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
 {{% /notice %}}
 
+### Week 5 Goals:
 
-### Week 5 Objectives:
+In this week, my main goal was to grasp the concepts and services related to security in AWS, including shared responsibility models, access management, encryption, and securing resources. I also became familiar with AWS tools and services to apply them in practical exercises.
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+The specific goals included:
+* Understand the **Share Responsibility Model** of AWS.
+* Master key AWS security services: **IAM**, **Cognito**, **Security Hub**, **KMS**, and **Identity Center**.
+* Improve skills in managing resources and security through **IAM Permissions Boundary**, **Resource Tags**, and encryption techniques.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Tasks to be Implemented This Week:
 
+| Day | Task                                                                                                                                                                                                                                                                  | Start Date  | End Date    | Resource Link                                        |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------- | ---------------------------------------------------- |
+| 2   | - Learn the theory about the **Share Responsibility Model** and AWS security principles. <br> - Read documentation on AWS security services: <br>&emsp;+ **Amazon IAM** <br>&emsp;+ **Amazon Cognito** <br>&emsp;+ **AWS Identity Center** <br>&emsp;+ **AWS KMS** <br>&emsp;+ **AWS Security Hub**  | 04/10/2025  | 04/10/2025  | [AWS Study Group](https://000013.awsstudygroup.com/)  |
+| 3   | - **Practical Exercise:** <br>&emsp;+ Set up and use **AWS Security Hub** for security monitoring and issue detection. <br>&emsp;+ Create and manage **IAM Users**, **Roles**, and **Policies** for AWS accounts. <br>&emsp;+ Create **IAM Groups** and manage access permissions for user groups. | 05/10/2025  | 05/10/2025  | [AWS Study Group](https://000022.awsstudygroup.com/)  |
+| 4   | - **Practical Exercise:** <br>&emsp;+ Optimize **EC2** costs with **Lambda** to automate stopping or starting EC2 instances. <br>&emsp;+ Manage EC2 access via **Resource Tags** through **IAM**. <br>&emsp;+ Set up **IAM Permission Boundaries** to limit user permissions. <br>&emsp;+ Encrypt data with **AWS KMS**. | 06/10/2025  | 06/10/2025  | [AWS Study Group](https://000027.awsstudygroup.com/)  |
+| 5   | - **Advanced Practice:** <br>&emsp;+ Explore and apply security management in **AWS Organizations** for managing multiple AWS accounts. <br>&emsp;+ Enhance the usage of **AWS Identity Center** to manage and synchronize users and groups across multiple AWS services.                                           | 07/10/2025  | 07/10/2025  | [AWS Study Group](https://000030.awsstudygroup.com/)  |
 
-### Week 5 Achievements:
+### Achievements of Week 5:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+This week, I achieved significant progress in mastering AWS security services and applying theoretical knowledge into practical tasks. Specifically:
 
-* Successfully created and configured an AWS Free Tier account.
+1. **Understanding and Applying the Share Responsibility Model of AWS**:
+    - I gained a clear understanding of how AWS shares responsibility with customers for securing infrastructure and applications. This helped me define my role in managing security while deploying services on AWS.
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+2. **Theoretical Knowledge of Key AWS Security Services**:
+    - **Amazon IAM**: Learned how to create and manage **IAM Users**, **Roles**, and **Policies**, helping me control access to resources.
+    - **Amazon Cognito**: Explored how to manage user authentication for applications in AWS.
+    - **AWS Identity Center**: Investigated how to connect users to AWS services through Identity Center.
+    - **AWS Security Hub**: Configured and used it for security monitoring and threat detection.
+    - **AWS KMS**: Practiced encrypting data at rest and securing sensitive data with encryption keys.
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+3. **Practical Application of AWS Security Services**:
+    - Successfully set up and configured **AWS Security Hub** to monitor security issues, detecting vulnerabilities early.
+    - Configured **IAM Permissions Boundary** to restrict user permissions and ensure minimal access.
+    - **Optimizing EC2 Costs with Lambda**: Used Lambda to automate the stopping of idle EC2 instances to reduce costs.
+    - Managed EC2 access with **IAM Policies** and **Resource Tags**.
 
-* Used AWS CLI to perform basic operations such as:
+4. **Improved Resource Management and Security Skills**:
+    - Created and managed **IAM Groups** and **Policies** to control user access efficiently.
+    - Explored **AWS Organizations** for managing multiple AWS accounts and ensuring consistent security policies across the organization.
 
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
+### Conclusion:
 
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+In Week 5, I significantly improved my ability to use AWS security and access management tools. These skills form the foundation for implementing security solutions and cost optimization in upcoming AWS projects. The practical exercises helped me consolidate theory and enhance my ability to use AWS in real-world scenarios.
 

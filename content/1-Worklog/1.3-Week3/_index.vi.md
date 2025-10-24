@@ -5,11 +5,8 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Thông tin sau chỉ dùng để tham khảo. Vui lòng **không sao chép nguyên văn** cho báo cáo của riêng bạn, kể cả phần cảnh báo này.
-{{% /notice %}}
 
-### Mục tiêu Tuần 3:
+### Mục tiêu tuần 3:
 
 * Hiểu rõ về Amazon EC2 và các thành phần liên quan (AMI, Backup, Key Pair, EBS, Instance Store, User Data, Metadata).
 * Tìm hiểu Auto Scaling của EC2 và vai trò của nó trong việc mở rộng linh hoạt và tối ưu chi phí.

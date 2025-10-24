@@ -6,9 +6,6 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-{{% notice info %}}
-ℹ️ **Ghi chú:** Đây là worklog tổng kết lại nội dung tuần 1. Do báo cáo được viết muộn hơn so với kế hoạch, các mốc thời gian đã được điều chỉnh để phản ánh đúng tiến độ thực tế.
-{{% /notice %}}
 
 ### Mục tiêu tuần 1:
 

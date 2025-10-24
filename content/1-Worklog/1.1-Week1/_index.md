@@ -6,11 +6,8 @@ chapter: false
 pre: " <b> 1.1. </b> "
 ---
 
-{{% notice info %}}
-ℹ️ **Note:** This worklog summarizes the activities of Week 1. Since the report was submitted later than planned, the dates have been adjusted to reflect the actual progress.
-{{% /notice %}}
 
-### Week 1 Goals:
+### Week 1 Objectives:
 
 * Get familiar with the First Cloud Journey (FCJ) team.
 * Understand AWS core services and learn how to interact with them via Console & CLI.

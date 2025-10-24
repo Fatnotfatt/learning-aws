@@ -60,11 +60,9 @@ Administration Best Practices để biết chi tiết).
 
 Trong kiến trúc này, thường có hai vai:
 
--   Administrator -- người chịu trách nhiệm thiết lập hạ tầng chung và
-    > môi trường cho các đội use-case
+-   Administrator -- người chịu trách nhiệm thiết lập hạ tầng chung và môi trường cho các đội use-case
 
--   User (Người dùng) -- nhà thực nghiệm ML từ các đội use-case, sử dụng
-    > môi trường đã thiết lập để giải quyết bài toán doanh nghiệp
+-   User (Người dùng) -- nhà thực nghiệm ML từ các đội use-case, sử dụng môi trường đã thiết lập để giải quyết bài toán doanh nghiệp
 
 Comet hoạt động tốt với cả SageMaker AI và Amazon SageMaker (SageMaker
 AI dùng môi trường tích hợp trong SageMaker Studio IDE; SageMaker dùng
@@ -75,16 +73,12 @@ Unified Studio IDE). Ở đây, chúng ta dùng SageMaker Studio trong ví dụ.
 Khi một đội muốn triển khai use-case phát hiện gian lận, admin thực
 hiện:
 
-1.  Thực hiện các bước prerequisite để thiết lập Partner AI Apps --- cấp
-    > phép để Comet có thể giả danh role SageMaker AI của người dùng và
-    > quản lý đăng ký Comet qua AWS Marketplace.\
-    > ![](media/image3.png)
+1.  Thực hiện các bước prerequisite để thiết lập Partner AI Apps --- cấp phép để Comet có thể giả danh role SageMaker AI của người dùng và quản lý đăng ký Comet qua AWS Marketplace.\
+![](media/image3.png)
 
-2.  Trong console SageMaker AI, vào phần Applications and IDEs → Partner
-    > AI Apps → Comet để xem chi tiết.
+2.  Trong console SageMaker AI, vào phần Applications and IDEs → Partner AI Apps → Comet để xem chi tiết.
 
-    -   Hiển thị chi tiết hợp đồng, mô hình pricing, ước tính chi phí hạ
-        > tầng Comet.
+    -   Hiển thị chi tiết hợp đồng, mô hình pricing, ước tính chi phí hạ tầng Comet.
 
 3.  Chọn Go to Marketplace để đăng ký Comet từ AWS Marketplace.
 
@@ -92,19 +86,14 @@ hiện:
 
 5.  Sau khi đăng ký xong, admin bắt đầu cấu hình Comet.
 
-    -   Khi deploy Comet, thêm project lead của đội phát hiện gian lận
-        > làm admin quản lý dashboard Comet.
+    -   Khi deploy Comet, thêm project lead của đội phát hiện gian lận làm admin quản lý dashboard Comet.
 
-6.  Quá trình deploy Comet mất vài phút. (Tham khảo hướng dẫn Partner AI
-    > App provisioning để biết chi tiết).
+6.  Quá trình deploy Comet mất vài phút. (Tham khảo hướng dẫn Partner AI App provisioning để biết chi tiết).
 
-7.  Thiết lập domain SageMaker AI theo hướng dẫn *Use custom setup for
-    > Amazon SageMaker AI*. Theo best practice, cung cấp URL domain có
-    > pre-signed để đội use-case truy cập Comet UI mà không cần đăng
-    > nhập console SageMaker.
+7.  Thiết lập domain SageMaker AI theo hướng dẫn *Use custom setup for Amazon SageMaker AI
+*. Theo best practice, cung cấp URL domain có pre-signed để đội use-case truy cập Comet UI mà không cần đăng nhập console SageMaker.
 
-8.  Thêm thành viên đội vào domain và bật quyền truy cập Comet khi cấu
-    > hình domain.
+8.  Thêm thành viên đội vào domain và bật quyền truy cập Comet khi cấu hình domain.
 
 Sau các bước này, domain SageMaker AI đã sẵn sàng để user đăng nhập và
 bắt đầu làm việc.
@@ -115,22 +104,17 @@ Khi môi trường đã sẵn sàng, user thực hiện:
 
 1.  Đăng nhập domain SageMaker AI qua URL đã được pre-signed.
 
-    -   Tự động chuyển tới IDE SageMaker Studio, user name và IAM
-        > execution role đã được admin cấu hình sẵn.
+    -   Tự động chuyển tới IDE SageMaker Studio, user name và IAM execution role đã được admin cấu hình sẵn.
 
 2.  Tạo một JupyterLab Space theo hướng dẫn JupyterLab user guide.
 
-3.  Bắt đầu làm use-case phát hiện gian lận bằng cách khởi chạy
-    > notebook.
+3.  Bắt đầu làm use-case phát hiện gian lận bằng cách khởi chạy notebook.
 
     -   Admin đã cấp quyền truy cập dữ liệu qua bucket S3 cần thiết.
 
-4.  Để dùng API của Comet, cài gói comet_ml và cấu hình biến môi trường
-    > (environment variables) theo hướng dẫn *Set up Partner AI Apps
-    > SDKs*.
+4.  Để dùng API của Comet, cài gói comet_ml và cấu hình biến môi trường (environment variables) theo hướng dẫn *Set up Partner AI Apps SDKs*.
 
-5.  Trong SageMaker Studio, chọn Partner AI Apps → Open Comet để truy
-    > cập giao diện Comet UI.
+5.  Trong SageMaker Studio, chọn Partner AI Apps → Open Comet để truy cập giao diện Comet UI.
 
 > ![](media/image1.png)
 
@@ -174,11 +158,9 @@ COMET_WORKSPACE = \'\<your-comet-workspace-name\>\'
 
 COMET_PROJECT_NAME = \'\<your-comet-project-name\>\'
 
--   Biến AWS_PARTNER_APP_ARN và COMET_API_KEY lấy từ trang chi tiết
-    > Comet trong SageMaker.
+-   Biến AWS_PARTNER_APP_ARN và COMET_API_KEY lấy từ trang chi tiết Comet trong SageMaker.
 
--   COMET_WORKSPACE và COMET_PROJECT_NAME là tên workspace và project
-    > bạn sẽ dùng để nhóm các thực nghiệm.
+-   COMET_WORKSPACE và COMET_PROJECT_NAME là tên workspace và project bạn sẽ dùng để nhóm các thực nghiệm.
 
 ## **Chuẩn bị dataset**
 
@@ -244,8 +226,7 @@ Các bước tiền xử lý bao gồm:
 
 -   Chia dữ liệu thành các tập train/validation/test
 
--   Chuẩn hoá các đặc trưng (standardization) dùng StandardScaler của
-    > scikit-learn
+-   Chuẩn hoá các đặc trưng (standardization) dùng StandardScaler của scikit-learn
 
 ***Mã tiền xử lý được viết trong file preprocess.py và chạy như
 SageMaker Processing Job:***
@@ -274,9 +255,7 @@ destination=f\'s3://{bucket_name}/{processed_data_prefix}\')\]
 
 )
 
--   *Khi job bắt đầu, SageMaker AI tạo instance, xử lý dữ liệu, và sau
-    > đó giải phóng resource.\
-    > *
+-   *Khi job bắt đầu, SageMaker AI tạo instance, xử lý dữ liệu, và sau đó giải phóng resource.*
 
 -   *Kết quả tiền xử lý được lưu lên S3.*
 
@@ -317,8 +296,7 @@ experiment_1.log_artifact(preprocessed_dataset_artifact)
 
 -   Artifact cùng tên nhưng alias khác cho phép Comet quản lý versioning
 
--   Metadata bổ sung giúp ghi chú những gì đã làm (split,
-    > preprocessing...)
+-   Metadata bổ sung giúp ghi chú những gì đã làm (split, preprocessing...)
 
 ## **Workflow thực nghiệm Comet + SageMaker AI**
 
@@ -358,10 +336,9 @@ estimator.fit({
 
 })
 
--   *log_training_job() --- ghi metadata huấn luyện vào Comet và liên
-    > kết mô hình:*\
-    > \
-    > log_sagemaker_training_job_v1(
+-   *log_training_job() --- ghi metadata huấn luyện vào Comet và liên kết mô hình:*
+
+\\log_sagemaker_training_job_v1(
 
 estimator=training_estimator,
 
@@ -381,8 +358,7 @@ metadata=metadata
 
 )
 
--   *deploy_and_evaluate_model() --- triển khai endpoint và đánh giá,
-    > log metrics:*
+-   *deploy_and_evaluate_model() --- triển khai endpoint và đánh giá,log metrics:*
 
 predictor = estimator.deploy(initial_instance_count=1,
 instance_type=\"ml.m5.xlarge\")
@@ -488,8 +464,7 @@ nó tự shut down sau khi job kết thúc. Nhưng bạn vẫn cần:
 
 1.  Tắt JupyterLab Space khi không dùng (theo hướng dẫn Idle shutdown).
 
-2.  Hủy đăng ký Comet nếu không tiếp tục dùng (tránh phí) --- hợp đồng
-    > sẽ tự gia hạn nếu không huỷ.
+2.  Hủy đăng ký Comet nếu không tiếp tục dùng (tránh phí) --- hợp đồng sẽ tự gia hạn nếu không huỷ.
 
 ## **Lợi ích của tích hợp SageMaker + Comet**
 
@@ -517,17 +492,14 @@ không thể tái tạo kết quả trước đó.
 Khác với các giải pháp rời rạc chỉ hỗ trợ training hay monitoring,
 SageMaker + Comet hỗ trợ toàn bộ vòng đời ML.
 
--   Mô hình có thể được đăng ký trong model registry của Comet với
-    > version, quản lý.
+-   Mô hình có thể được đăng ký trong model registry của Comet với version, quản lý.
 
--   SageMaker lo deployment.\
-    > rkflow phê duyệt promotion.
+-   SageMaker lo deployment.\rkflow phê duyệt promotion.
 
 -   Comet giữ lineage và wo
 
--   Comet giám sát hiệu suất mô hình, theo dõi drift dữ liệu sau khi
-    > deployment --- tạo vòng feedback, nơi thông tin từ production ảnh
-    > hưởng đến experiment tiếp theo.
+-   Comet giám sát hiệu suất mô hình, theo dõi drift dữ liệu sau khi deployment 
+--- tạo vòng feedback, nơi thông tin từ production ảnh hưởng đến experiment tiếp theo.
 
 ## **Kết luận**
 
