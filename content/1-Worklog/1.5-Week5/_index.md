@@ -51,6 +51,137 @@ This week, I achieved significant progress in mastering AWS security services an
     - Created and managed **IAM Groups** and **Policies** to control user access efficiently.
     - Explored **AWS Organizations** for managing multiple AWS accounts and ensuring consistent security policies across the organization.
 
+# LAB PRACTICE
+
+---
+
+## Mục lục
+- [Lab 18](#lab-18)
+    - [Lab 22](#lab-22)
+        - [VPC](#vpc)
+        - [EC2](#ec2)
+        - [Slack](#slack)
+        - [Lambda + EventBridge](#lambda--eventbridge)
+        - [Kết quả kiểm thử (Test Result)](#kết-quả-kiểm-thử-test-result)
+- [Lab 27](#lab-27)
+- [Lab 28](#lab-28)
+    - [Vùng (Regions) & EC2](#vùng-regions--ec2)
+    - [Thẻ (Tags)](#thẻ-tags)
+
+---
+
+## Lab 18
+
+Hình minh họa:
+
+![Lab 18 — Tổng quan](lab_18/img.png "Lab 18 — Tổng quan")
+
+---
+
+## Lab 22
+
+### VPC
+
+Hình minh họa cấu hình VPC:
+
+- ![VPC — Sơ đồ 1](lab_22/img.png "VPC — Sơ đồ 1")
+- ![VPC — Sơ đồ 2](lab_22/img_1.png "VPC — Sơ đồ 2")
+- ![VPC — Sơ đồ 3](lab_22/img_2.png "VPC — Sơ đồ 3")
+- ![VPC — Sơ đồ 4](lab_22/img_3.png "VPC — Sơ đồ 4")
+
+### EC2
+
+Hình minh họa cấu hình EC2:
+
+- ![EC2 — Màn hình 1](lab_22/img_4.png "EC2 — Màn hình 1")
+- ![EC2 — Màn hình 2](lab_22/img_5.png "EC2 — Màn hình 2")
+
+### Slack
+
+> **Lưu ý (UI mới):** Cần chọn lại **kênh (channel)** trong phần cấu hình để lấy đúng **Webhook URL**.
+
+- ![Slack — Ví dụ 1](lab_22/img_6.png "Slack — Ví dụ 1")
+- ![Slack — Lấy Webhook URL](lab_22/img_8.png "Slack — Lấy Webhook URL")
+- ![Slack — Cấu hình Webhook](lab_22/img_7.png "Slack — Cấu hình Webhook")
+
+### Lambda + EventBridge
+
+Hình minh họa cấu hình Lambda và EventBridge:
+
+- ![Lambda — Chi tiết 1](lab_22/img_10.png "Lambda — Chi tiết 1")
+- ![Lambda — Chi tiết 2](lab_22/img_11.png "Lambda — Chi tiết 2")
+- ![Lambda — Chi tiết 3](lab_22/img_12.png "Lambda — Chi tiết 3")
+- ![Lambda — Chi tiết 4](lab_22/img_13.png "Lambda — Chi tiết 4")
+- ![Lambda — Chi tiết 5](lab_22/img_15.png "Lambda — Chi tiết 5")
+- ![Lambda — Chi tiết 6](lab_22/img_16.png "Lambda — Chi tiết 6")
+- ![Lambda — Chi tiết 7](lab_22/img_17.png "Lambda — Chi tiết 7")
+
+### Kết quả kiểm thử (Test Result)
+
+- ![Test Result — 1](lab_22/img_18.png "Test Result — 1")
+- ![Test Result — 2](lab_22/img_20.png "Test Result — 2")
+- ![Test Result — 3](lab_22/img_19.png "Test Result — 3")
+- ![Test Result — 4](lab_22/img_21.png "Test Result — 4")
+
+---
+
+## Lab 27
+
+Hình minh họa:
+
+![Lab 27 — Ảnh 1](Lab_27/img.png "Lab 27 — Ảnh 1")
+![Lab 27 — Ảnh 2](Lab_27/img_1.png "Lab 27 — Ảnh 2")
+![Lab 27 — Ảnh 3](Lab_27/img_2.png "Lab 27 — Ảnh 3")
+![Lab 27 — Ảnh 4](Lab_27/img_3.png "Lab 27 — Ảnh 4")
+![Lab 27 — Ảnh 5](Lab_27/img_4.png "Lab 27 — Ảnh 5")
+![Lab 27 — Ảnh 6](Lab_27/img_5.png "Lab 27 — Ảnh 6")
+
+---
+
+## Lab 28
+
+Hình minh họa:
+
+![Lab 28 — Ảnh 1](Lab_28/img.png "Lab 28 — Ảnh 1")
+![Lab 28 — Ảnh 2](Lab_28/img_1.png "Lab 28 — Ảnh 2")
+![Lab 28 — Ảnh 3](Lab_28/img_2.png "Lab 28 — Ảnh 3")
+![Lab 28 — Ảnh 4](Lab_28/img_3.png "Lab 28 — Ảnh 4")
+![Lab 28 — Ảnh 5](Lab_28/img_4.png "Lab 28 — Ảnh 5")
+
+### Vùng (Regions) & EC2
+
+- EC2 tại **ap-northeast-1 (Tokyo)**  
+  ![EC2 — ap-northeast-1 (Tokyo)](Lab_28/img_5.png "EC2 — ap-northeast-1 (Tokyo)")
+
+- EC2 tại **us-east-1 (North Virginia)**  
+  ![EC2 — us-east-1 (North Virginia)](Lab_28/img_6.png "EC2 — us-east-1 (North Virginia)")
+
+### Thẻ (Tags)
+
+Các cặp key/value mẫu được sử dụng:
+
+| Key  | Value   |
+|------|---------|
+| Name | Example |
+| Team | Beta    |
+| Team | Alpha   |
+| Team | TEST    |
+
+Minh họa trên giao diện:
+
+- **Name = Example**, **Team = Beta**  
+  ![Tags — Beta](Lab_28/img_7.png "Tags — Name=Example; Team=Beta")
+
+- **Name = Example**, **Team = Alpha**  
+  ![Tags — Alpha](Lab_28/img_8.png "Tags — Name=Example; Team=Alpha")
+
+![Lab 28 — Ảnh 6](Lab_28/img_9.png "Lab 28 — Ảnh 6")
+
+- **Team = TEST**  
+  ![Tags — TEST](Lab_28/img_10.png "Tags — Team=TEST")
+
+---
+
 ### Conclusion:
 
 In Week 5, I significantly improved my ability to use AWS security and access management tools. These skills form the foundation for implementing security solutions and cost optimization in upcoming AWS projects. The practical exercises helped me consolidate theory and enhance my ability to use AWS in real-world scenarios.
