@@ -64,6 +64,8 @@ Tuần này, tôi đã đạt được những kết quả quan trọng trong vi
 - [Lab 28](#lab-28)
     - [Vùng (Regions) & EC2](#vùng-regions--ec2)
     - [Thẻ (Tags)](#thẻ-tags)
+- [Lab 30](#lab-30)
+- [Lab 33](#lab-33)
 
 ---
 
