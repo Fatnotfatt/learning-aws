@@ -5,76 +5,83 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
-### Week 5 Goals:
+### Week 5 Objectives
 
-In this week, my main goal was to grasp the concepts and services related to security in AWS, including shared responsibility models, access management, encryption, and securing resources. I also became familiar with AWS tools and services to apply them in practical exercises.
+This week, my main goal was to master the concepts and security services in AWS, including the shared responsibility model, access management, encryption, and resource protection.  
+I also familiarized myself with various AWS tools and services to apply them in hands-on practice.
 
-The specific goals included:
-* Understand the **Share Responsibility Model** of AWS.
-* Master key AWS security services: **IAM**, **Cognito**, **Security Hub**, **KMS**, and **Identity Center**.
-* Improve skills in managing resources and security through **IAM Permissions Boundary**, **Resource Tags**, and encryption techniques.
+Specific objectives include:
+* Understand the **Shared Responsibility Model** of AWS.
+* Master key AWS security services: **IAM**, **Cognito**, **Security Hub**, **KMS**, **Identity Center**.
+* Improve resource management and security through **IAM Permissions Boundaries**, **Resource Tags**, and encryption techniques.
 
-### Tasks to be Implemented This Week:
+---
 
-| Day | Task                                                                                                                                                                                                                                                                  | Start Date  | End Date    | Resource Link                                        |
-| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ----------- | ---------------------------------------------------- |
-| 2   | - Learn the theory about the **Share Responsibility Model** and AWS security principles. <br> - Read documentation on AWS security services: <br>&emsp;+ **Amazon IAM** <br>&emsp;+ **Amazon Cognito** <br>&emsp;+ **AWS Identity Center** <br>&emsp;+ **AWS KMS** <br>&emsp;+ **AWS Security Hub**  | 04/10/2025  | 04/10/2025  | [AWS Study Group](https://000013.awsstudygroup.com/)  |
-| 3   | - **Practical Exercise:** <br>&emsp;+ Set up and use **AWS Security Hub** for security monitoring and issue detection. <br>&emsp;+ Create and manage **IAM Users**, **Roles**, and **Policies** for AWS accounts. <br>&emsp;+ Create **IAM Groups** and manage access permissions for user groups. | 05/10/2025  | 05/10/2025  | [AWS Study Group](https://000022.awsstudygroup.com/)  |
-| 4   | - **Practical Exercise:** <br>&emsp;+ Optimize **EC2** costs with **Lambda** to automate stopping or starting EC2 instances. <br>&emsp;+ Manage EC2 access via **Resource Tags** through **IAM**. <br>&emsp;+ Set up **IAM Permission Boundaries** to limit user permissions. <br>&emsp;+ Encrypt data with **AWS KMS**. | 06/10/2025  | 06/10/2025  | [AWS Study Group](https://000027.awsstudygroup.com/)  |
-| 5   | - **Advanced Practice:** <br>&emsp;+ Explore and apply security management in **AWS Organizations** for managing multiple AWS accounts. <br>&emsp;+ Enhance the usage of **AWS Identity Center** to manage and synchronize users and groups across multiple AWS services.                                           | 07/10/2025  | 07/10/2025  | [AWS Study Group](https://000030.awsstudygroup.com/)  |
+### Weekly Tasks
 
-### Achievements of Week 5:
+| Day | Task                                                                                                                                                                                                                                                        | Start Date | Completion Date | Reference Source                                      |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------- | ---------------- | ----------------------------------------------------- |
+| 2   | - Study the theory of the **Shared Responsibility Model** and AWS security principles. <br> - Review documentation for AWS security services: <br>&emsp;+ **Amazon IAM** <br>&emsp;+ **Amazon Cognito** <br>&emsp;+ **AWS Identity Center** <br>&emsp;+ **AWS KMS** <br>&emsp;+ **AWS Security Hub** | 04/10/2025  | 04/10/2025       | [AWS Study Group](https://000013.awsstudygroup.com/)  |
+| 3   | - **Hands-on:** <br>&emsp;+ Configure and use **AWS Security Hub** to monitor and detect security issues. <br>&emsp;+ Create and manage **IAM Users**, **Roles**, and **Policies** for AWS accounts. <br>&emsp;+ Create **IAM Groups** and manage access permissions for user groups. | 05/10/2025  | 05/10/2025       | [AWS Study Group](https://000022.awsstudygroup.com/)  |
+| 4   | - **Hands-on:** <br>&emsp;+ Optimize **EC2** costs using **Lambda** for automated start/stop of EC2 instances. <br>&emsp;+ Manage EC2 access via **Resource Tags** using **IAM**. <br>&emsp;+ Configure **IAM Permission Boundaries** to limit user privileges. <br>&emsp;+ Encrypt data using **AWS KMS**. | 06/10/2025  | 06/10/2025       | [AWS Study Group](https://000027.awsstudygroup.com/)  |
+| 5   | - **Advanced Practice:** <br>&emsp;+ Learn and apply security methods in **AWS Organizations** for multi-account management. <br>&emsp;+ Enhance proficiency in **AWS Identity Center** for managing and synchronizing users and groups across AWS services. | 07/10/2025  | 07/10/2025       | [AWS Study Group](https://000030.awsstudygroup.com/)  |
 
-This week, I achieved significant progress in mastering AWS security services and applying theoretical knowledge into practical tasks. Specifically:
+---
 
-1. **Understanding and Applying the Share Responsibility Model of AWS**:
-    - I gained a clear understanding of how AWS shares responsibility with customers for securing infrastructure and applications. This helped me define my role in managing security while deploying services on AWS.
+### Results Achieved in Week 5
 
-2. **Theoretical Knowledge of Key AWS Security Services**:
-    - **Amazon IAM**: Learned how to create and manage **IAM Users**, **Roles**, and **Policies**, helping me control access to resources.
-    - **Amazon Cognito**: Explored how to manage user authentication for applications in AWS.
-    - **AWS Identity Center**: Investigated how to connect users to AWS services through Identity Center.
-    - **AWS Security Hub**: Configured and used it for security monitoring and threat detection.
-    - **AWS KMS**: Practiced encrypting data at rest and securing sensitive data with encryption keys.
+During this week, I achieved significant progress in understanding and applying AWS security services, effectively bridging theory with practice. Specifically:
 
-3. **Practical Application of AWS Security Services**:
-    - Successfully set up and configured **AWS Security Hub** to monitor security issues, detecting vulnerabilities early.
-    - Configured **IAM Permissions Boundary** to restrict user permissions and ensure minimal access.
-    - **Optimizing EC2 Costs with Lambda**: Used Lambda to automate the stopping of idle EC2 instances to reduce costs.
-    - Managed EC2 access with **IAM Policies** and **Resource Tags**.
+1. **Understanding and Applying the AWS Shared Responsibility Model**
+    - I fully grasped that AWS is responsible for the security of the cloud infrastructure, while users are responsible for securing their own data and applications.
+    - This clarified my role in ensuring compliance and protection when deploying services on AWS.
 
-4. **Improved Resource Management and Security Skills**:
-    - Created and managed **IAM Groups** and **Policies** to control user access efficiently.
-    - Explored **AWS Organizations** for managing multiple AWS accounts and ensuring consistent security policies across the organization.
+2. **Theoretical Knowledge of AWS Core Security Services**
+    - **Amazon IAM**: Learned how to create and manage **Users**, **Roles**, and **Policies** to control user and group access.
+    - **Amazon Cognito**: Studied user management and authentication for AWS applications.
+    - **AWS Identity Center**: Understood how to link and manage user access across multiple AWS services.
+    - **AWS Security Hub**: Configured and utilized it to monitor and detect security threats.
+    - **AWS KMS**: Practiced encrypting data at rest and securing sensitive data using encryption keys.
+
+3. **Practical Implementation of AWS Security Services**
+    - Successfully installed and configured **AWS Security Hub** for continuous monitoring and vulnerability detection.
+    - Configured **IAM Permissions Boundaries** to restrict user privileges and prevent unauthorized access.
+    - **EC2 Cost Optimization with Lambda**: Automated the shutdown of unused EC2 instances to minimize operational costs.
+    - **EC2 Access Control via IAM & Resource Tags**: Applied IAM Policies that use **Tags** to precisely define access scope.
+
+4. **Enhanced AWS Resource Management Skills**
+    - Created and managed **IAM Groups** and **Policies**, improving group-based access control.
+    - Learned how to manage multiple AWS accounts using **AWS Organizations**, ensuring consistent security policies across the organization.
+
+---
 
 # LAB PRACTICE
 
 ---
 
-## Mục lục
+## Table of Contents
 - [Lab 18](#lab-18)
     - [Lab 22](#lab-22)
         - [VPC](#vpc)
         - [EC2](#ec2)
         - [Slack](#slack)
         - [Lambda + EventBridge](#lambda--eventbridge)
-        - [Kết quả kiểm thử (Test Result)](#kết-quả-kiểm-thử-test-result)
+        - [Test Results](#test-results)
 - [Lab 27](#lab-27)
 - [Lab 28](#lab-28)
-    - [Vùng (Regions) & EC2](#vùng-regions--ec2)
-    - [Thẻ (Tags)](#thẻ-tags)
+    - [Regions & EC2](#regions--ec2)
+    - [Tags](#tags)
+- [Lab 30](#lab-30)
+- [Lab 33](#lab-33)
 
 ---
 
 ## Lab 18
 
-Hình minh họa:
+Illustration:
 
-![Lab 18 — Tổng quan](lab_18/img.png "Lab 18 — Tổng quan")
+![Lab 18 — Overview](lab_18/img.png "Lab 18 — Overview")
 
 ---
 
@@ -82,41 +89,41 @@ Hình minh họa:
 
 ### VPC
 
-Hình minh họa cấu hình VPC:
+VPC configuration illustrations:
 
-- ![VPC — Sơ đồ 1](lab_22/img.png "VPC — Sơ đồ 1")
-- ![VPC — Sơ đồ 2](lab_22/img_1.png "VPC — Sơ đồ 2")
-- ![VPC — Sơ đồ 3](lab_22/img_2.png "VPC — Sơ đồ 3")
-- ![VPC — Sơ đồ 4](lab_22/img_3.png "VPC — Sơ đồ 4")
+- ![VPC — Diagram 1](lab_22/img.png "VPC — Diagram 1")
+- ![VPC — Diagram 2](lab_22/img_1.png "VPC — Diagram 2")
+- ![VPC — Diagram 3](lab_22/img_2.png "VPC — Diagram 3")
+- ![VPC — Diagram 4](lab_22/img_3.png "VPC — Diagram 4")
 
 ### EC2
 
-Hình minh họa cấu hình EC2:
+EC2 configuration illustrations:
 
-- ![EC2 — Màn hình 1](lab_22/img_4.png "EC2 — Màn hình 1")
-- ![EC2 — Màn hình 2](lab_22/img_5.png "EC2 — Màn hình 2")
+- ![EC2 — Screen 1](lab_22/img_4.png "EC2 — Screen 1")
+- ![EC2 — Screen 2](lab_22/img_5.png "EC2 — Screen 2")
 
 ### Slack
 
-> **Lưu ý (UI mới):** Cần chọn lại **kênh (channel)** trong phần cấu hình để lấy đúng **Webhook URL**.
+> **Note (New UI):** Re-select the **channel** during setup to get the correct **Webhook URL**.
 
-- ![Slack — Ví dụ 1](lab_22/img_6.png "Slack — Ví dụ 1")
-- ![Slack — Lấy Webhook URL](lab_22/img_8.png "Slack — Lấy Webhook URL")
-- ![Slack — Cấu hình Webhook](lab_22/img_7.png "Slack — Cấu hình Webhook")
+- ![Slack — Example 1](lab_22/img_6.png "Slack — Example 1")
+- ![Slack — Get Webhook URL](lab_22/img_8.png "Slack — Get Webhook URL")
+- ![Slack — Configure Webhook](lab_22/img_7.png "Slack — Configure Webhook")
 
 ### Lambda + EventBridge
 
-Hình minh họa cấu hình Lambda và EventBridge:
+Lambda and EventBridge configuration illustrations:
 
-- ![Lambda — Chi tiết 1](lab_22/img_10.png "Lambda — Chi tiết 1")
-- ![Lambda — Chi tiết 2](lab_22/img_11.png "Lambda — Chi tiết 2")
-- ![Lambda — Chi tiết 3](lab_22/img_12.png "Lambda — Chi tiết 3")
-- ![Lambda — Chi tiết 4](lab_22/img_13.png "Lambda — Chi tiết 4")
-- ![Lambda — Chi tiết 5](lab_22/img_15.png "Lambda — Chi tiết 5")
-- ![Lambda — Chi tiết 6](lab_22/img_16.png "Lambda — Chi tiết 6")
-- ![Lambda — Chi tiết 7](lab_22/img_17.png "Lambda — Chi tiết 7")
+- ![Lambda — Detail 1](lab_22/img_10.png "Lambda — Detail 1")
+- ![Lambda — Detail 2](lab_22/img_11.png "Lambda — Detail 2")
+- ![Lambda — Detail 3](lab_22/img_12.png "Lambda — Detail 3")
+- ![Lambda — Detail 4](lab_22/img_13.png "Lambda — Detail 4")
+- ![Lambda — Detail 5](lab_22/img_15.png "Lambda — Detail 5")
+- ![Lambda — Detail 6](lab_22/img_16.png "Lambda — Detail 6")
+- ![Lambda — Detail 7](lab_22/img_17.png "Lambda — Detail 7")
 
-### Kết quả kiểm thử (Test Result)
+### Test Results
 
 - ![Test Result — 1](lab_22/img_18.png "Test Result — 1")
 - ![Test Result — 2](lab_22/img_20.png "Test Result — 2")
@@ -127,38 +134,38 @@ Hình minh họa cấu hình Lambda và EventBridge:
 
 ## Lab 27
 
-Hình minh họa:
+Illustrations:
 
-![Lab 27 — Ảnh 1](Lab_27/img.png "Lab 27 — Ảnh 1")
-![Lab 27 — Ảnh 2](Lab_27/img_1.png "Lab 27 — Ảnh 2")
-![Lab 27 — Ảnh 3](Lab_27/img_2.png "Lab 27 — Ảnh 3")
-![Lab 27 — Ảnh 4](Lab_27/img_3.png "Lab 27 — Ảnh 4")
-![Lab 27 — Ảnh 5](Lab_27/img_4.png "Lab 27 — Ảnh 5")
-![Lab 27 — Ảnh 6](Lab_27/img_5.png "Lab 27 — Ảnh 6")
+![Lab 27 — Image 1](Lab_27/img.png "Lab 27 — Image 1")
+![Lab 27 — Image 2](Lab_27/img_1.png "Lab 27 — Image 2")
+![Lab 27 — Image 3](Lab_27/img_2.png "Lab 27 — Image 3")
+![Lab 27 — Image 4](Lab_27/img_3.png "Lab 27 — Image 4")
+![Lab 27 — Image 5](Lab_27/img_4.png "Lab 27 — Image 5")
+![Lab 27 — Image 6](Lab_27/img_5.png "Lab 27 — Image 6")
 
 ---
 
 ## Lab 28
 
-Hình minh họa:
+Illustrations:
 
-![Lab 28 — Ảnh 1](Lab_28/img.png "Lab 28 — Ảnh 1")
-![Lab 28 — Ảnh 2](Lab_28/img_1.png "Lab 28 — Ảnh 2")
-![Lab 28 — Ảnh 3](Lab_28/img_2.png "Lab 28 — Ảnh 3")
-![Lab 28 — Ảnh 4](Lab_28/img_3.png "Lab 28 — Ảnh 4")
-![Lab 28 — Ảnh 5](Lab_28/img_4.png "Lab 28 — Ảnh 5")
+![Lab 28 — Image 1](Lab_28/img.png "Lab 28 — Image 1")
+![Lab 28 — Image 2](Lab_28/img_1.png "Lab 28 — Image 2")
+![Lab 28 — Image 3](Lab_28/img_2.png "Lab 28 — Image 3")
+![Lab 28 — Image 4](Lab_28/img_3.png "Lab 28 — Image 4")
+![Lab 28 — Image 5](Lab_28/img_4.png "Lab 28 — Image 5")
 
-### Vùng (Regions) & EC2
+### Regions & EC2
 
-- EC2 tại **ap-northeast-1 (Tokyo)**  
+- EC2 in **ap-northeast-1 (Tokyo)**  
   ![EC2 — ap-northeast-1 (Tokyo)](Lab_28/img_5.png "EC2 — ap-northeast-1 (Tokyo)")
 
-- EC2 tại **us-east-1 (North Virginia)**  
+- EC2 in **us-east-1 (North Virginia)**  
   ![EC2 — us-east-1 (North Virginia)](Lab_28/img_6.png "EC2 — us-east-1 (North Virginia)")
 
-### Thẻ (Tags)
+### Tags
 
-Các cặp key/value mẫu được sử dụng:
+Sample key/value pairs used:
 
 | Key  | Value   |
 |------|---------|
@@ -167,7 +174,7 @@ Các cặp key/value mẫu được sử dụng:
 | Team | Alpha   |
 | Team | TEST    |
 
-Minh họa trên giao diện:
+Tag interface examples:
 
 - **Name = Example**, **Team = Beta**  
   ![Tags — Beta](Lab_28/img_7.png "Tags — Name=Example; Team=Beta")
@@ -175,14 +182,76 @@ Minh họa trên giao diện:
 - **Name = Example**, **Team = Alpha**  
   ![Tags — Alpha](Lab_28/img_8.png "Tags — Name=Example; Team=Alpha")
 
-![Lab 28 — Ảnh 6](Lab_28/img_9.png "Lab 28 — Ảnh 6")
+![Lab 28 — Image 6](Lab_28/img_9.png "Lab 28 — Image 6")
 
 - **Team = TEST**  
   ![Tags — TEST](Lab_28/img_10.png "Tags — Team=TEST")
 
 ---
 
-### Conclusion:
+## Lab 30
 
-In Week 5, I significantly improved my ability to use AWS security and access management tools. These skills form the foundation for implementing security solutions and cost optimization in upcoming AWS projects. The practical exercises helped me consolidate theory and enhance my ability to use AWS in real-world scenarios.
+- **Policies:**
 
+![img.png](Lab_30/img.png)  
+![img_1.png](Lab_30/img_1.png)
+
+- **IAM:**
+
+![img_2.png](Lab_30/img_2.png)  
+![img_3.png](Lab_30/img_3.png)
+
+- **Check Permission:**
+
+![img_4.png](Lab_30/img_4.png)  
+![img_5.png](Lab_30/img_5.png)
+
+---
+
+## Lab 33
+
+- **Policies**
+
+![img.png](Lab_33/img.png)
+
+- **Role**
+
+![img_1.png](Lab_33/img_1.png)
+
+- **User**
+
+![img_2.png](Lab_33/img_2.png)
+
+- **KMS**
+
+![img_3.png](Lab_33/img_3.png)
+
+- **S3**
+
+![img_4.png](Lab_33/img_4.png)  
+![img_5.png](Lab_33/img_5.png)  
+![img_6.png](Lab_33/img_6.png)
+
+- **CloudTrail**
+
+![img_7.png](Lab_33/img_7.png)  
+![img_8.png](Lab_33/img_8.png)
+
+- **Athena**
+
+![img_9.png](Lab_33/img_9.png)
+
+- **Test after applying ACLs**
+
+![img_10.png](Lab_33/img_10.png)  
+![img_11.png](Lab_33/img_11.png)  
+![img_12.png](Lab_33/img_12.png)  
+![img_13.png](Lab_33/img_13.png)
+
+---
+
+### Conclusion
+
+During Week 5, I significantly improved my ability to use AWS security and access management tools.  
+These knowledge and skills form a solid foundation for implementing advanced security solutions and cost optimization in future AWS projects.  
+The lab exercises reinforced theoretical understanding and enhanced my practical skills for working effectively in real AWS environments.
