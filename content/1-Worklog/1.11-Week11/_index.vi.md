@@ -5,6 +5,9 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
+
+
+
 ### Mục tiêu tuần 11:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.

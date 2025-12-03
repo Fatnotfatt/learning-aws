@@ -5,6 +5,8 @@ weight: 2
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
+
+
 ### Week 12 Objectives:
 
 * Connect and get acquainted with members of First Cloud Journey.

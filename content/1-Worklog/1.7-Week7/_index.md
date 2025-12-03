@@ -6,6 +6,7 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
+
 ### Week 7 Objectives:
 
 - Connect and get acquainted with members of First Cloud Journey.

@@ -6,6 +6,7 @@ chapter: false
 pre: " <b> 1.8. </b> "
 ---
 
+
 ### Mục tiêu tuần 8:
 
 - Kết nối, làm quen với các thành viên trong First Cloud Journey.

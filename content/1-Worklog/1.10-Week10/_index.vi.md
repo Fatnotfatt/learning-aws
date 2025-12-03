@@ -5,6 +5,7 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
+
 ### Mục tiêu tuần 10:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.

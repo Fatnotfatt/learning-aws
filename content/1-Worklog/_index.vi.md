@@ -6,6 +6,7 @@ chapter: false
 pre: " <b> 1. </b> "
 ---
 
+
 **Trong trang này** bạn sẽ cần giới thiệu worklog của bạn **như thế nào**? Bạn hoàn thành chương trình trong vòng **bao nhiêu tuần**? Bạn **đã làm gì** trong các tuần đó?
 
 

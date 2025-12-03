@@ -6,6 +6,7 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
+
 ### Mục tiêu tuần 7:
 
 - Kết nối, làm quen với các thành viên trong First Cloud Journey.

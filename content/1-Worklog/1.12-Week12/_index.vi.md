@@ -5,6 +5,8 @@ weight: 2
 chapter: false
 pre: " <b> 1.12 </b> "
 ---
+
+
 ### Mục tiêu tuần 12:
 
 * Kết nối, làm quen với các thành viên trong First Cloud Journey.
