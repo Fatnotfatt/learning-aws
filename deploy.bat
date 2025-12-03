@@ -5,7 +5,7 @@ echo ===========================================
 
 :: Bước 1 - Build lại site
 cd /d "D:\Project code\OJT\learning-aws"
-hugo -D
+C:\Hugo\bin\hugo.exe -D
 if errorlevel 1 (
     echo ❌ Hugo build failed!
     pause
