@@ -64,6 +64,8 @@ Tuần này, tôi đã đạt được những kết quả quan trọng trong vi
 - [Lab 28](#lab-28)
     - [Vùng (Regions) & EC2](#vùng-regions--ec2)
     - [Thẻ (Tags)](#thẻ-tags)
+- [Lab 30](#lab-30)
+- [Lab 33](#lab-33)
 
 ---
 
@@ -176,6 +178,63 @@ Minh họa trên giao diện:
 
 - **Team = TEST**  
   ![Tags — TEST](Lab_28/img_10.png "Tags — Team=TEST")
+
+
+## Lab 30
+- Policies :
+
+![img.png](Lab_30/img.png)
+![img_1.png](Lab_30/img_1.png)
+
+- IAM :
+
+![img_2.png](Lab_30/img_2.png)
+![img_3.png](Lab_30/img_3.png)
+
+- Check Permission :
+
+![img_4.png](Lab_30/img_4.png)
+![img_5.png](Lab_30/img_5.png)
+
+## Lab 33
+
+- Policies
+
+![img.png](Lab_33/img.png)
+- Role
+
+![img_1.png](Lab_33/img_1.png)
+- User
+
+![img_2.png](Lab_33/img_2.png)
+
+- KMS
+
+![img_3.png](Lab_33/img_3.png)
+
+- S3
+
+![img_4.png](Lab_33/img_4.png)
+![img_5.png](Lab_33/img_5.png)
+![img_6.png](Lab_33/img_6.png)
+
+- CloudTrail
+
+![img_7.png](Lab_33/img_7.png)
+![img_8.png](Lab_33/img_8.png)
+
+- Athena
+
+![img_9.png](Lab_33/img_9.png)
+
+- TEST sau khi make ACLs
+![img_10.png](Lab_33/img_10.png)
+![img_11.png](Lab_33/img_11.png)
+![img_12.png](Lab_33/img_12.png)
+![img_13.png](Lab_33/img_13.png)
+
+
+
 
 ---
 
