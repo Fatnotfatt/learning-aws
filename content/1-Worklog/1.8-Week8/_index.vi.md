@@ -5,13 +5,7 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-<<<<<<< HEAD
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-=======
->>>>>>> d15aa055798a2b62346288900a5e203eb31fbd14
 
 ### Mục tiêu tuần 8:
 
