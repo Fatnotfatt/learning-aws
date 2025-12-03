@@ -1,7 +1,0 @@
-### Lab 27
-
-![img.png](Lab_27/img.png)
-![img_1.png](Lab_27/img_1.png)
-![img_2.png](Lab_27/img_2.png)
-![img_3.png](Lab_27/img_3.png)
-![img_4.png](Lab_27/img_4.png)
