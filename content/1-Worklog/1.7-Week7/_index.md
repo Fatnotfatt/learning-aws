@@ -6,9 +6,12 @@ chapter: false
 pre: " <b> 1.7. </b> "
 ---
 
+<<<<<<< HEAD
 {{% notice warning %}}
 ⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
 {{% /notice %}}
+=======
+>>>>>>> d15aa055798a2b62346288900a5e203eb31fbd14
 
 ### Week 7 Objectives:
 
