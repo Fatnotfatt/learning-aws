@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.11-week11/</loc>
+    <lastmod>2025-11-16T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.11-week11/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.11-week11/"
+                />
+  </url><url>
+    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.10-week10/</loc>
+    <lastmod>2025-11-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.10-week10/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.10-week10/"
+                />
+  </url><url>
+    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.9-week9/</loc>
+    <lastmod>2025-11-02T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.9-week9/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.9-week9/"
+                />
+  </url><url>
+    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.8-week8/</loc>
+    <lastmod>2025-10-26T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.8-week8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.8-week8/"
+                />
+  </url><url>
+    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.7-week7/</loc>
+    <lastmod>2025-10-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.7-week7/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.7-week7/"
+                />
+  </url><url>
     <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.6-week6/</loc>
     <lastmod>2025-10-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -223,45 +288,6 @@
                 href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.2-week2/"
                 />
   </url><url>
-    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.7-week7/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.7-week7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.7-week7/"
-                />
-  </url><url>
-    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.8-week8/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.8-week8/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.8-week8/"
-                />
-  </url><url>
-    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.9-week9/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.9-week9/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.9-week9/"
-                />
-  </url><url>
     <loc>https://Fatnotfatt.github.io/learning-aws/vi/5-workshop/5.4-s3-onprem/5.4.1-prepare/</loc>
     <lastmod>2025-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -312,32 +338,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://Fatnotfatt.github.io/learning-aws/vi/2-proposal/"
-                />
-  </url><url>
-    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.10-week10/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.10-week10/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.10-week10/"
-                />
-  </url><url>
-    <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.11-week11/</loc>
-    <lastmod>2025-09-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Fatnotfatt.github.io/learning-aws/1-worklog/1.11-week11/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.11-week11/"
                 />
   </url><url>
     <loc>https://Fatnotfatt.github.io/learning-aws/vi/1-worklog/1.12-week12/</loc>
