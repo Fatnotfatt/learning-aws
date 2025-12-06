@@ -3,258 +3,232 @@ title: "Event 2"
 date: 2025-09-10
 weight: 1
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 4.22. </b> "
 ---
 
-# Bài thu hoạch "AI-Driven Development Life Cycle: Reimagining Software Engineering"
+# Bài thu hoạch "AI/ML/GenAI on AWS"
 
 ### Mục Đích Của Sự Kiện
 
-- Tìm hiểu tác động biến đổi của generative AI trong phát triển phần mềm
-- Hiểu cách tích hợp AI vào vòng đời phát triển phần mềm (SDLC)
-- Giới thiệu các công cụ AI để tự động hóa tác vụ phát triển: Amazon Q Developer và Kiro
-- Học cách tận dụng AI để tăng năng suất và tập trung vào công việc có giá trị cao
-
-### Diễn Giả & Tổ Chức
-
-**Giảng viên:**
-
-- **Toan Huynh** – Tổng quan về AI-Driven Development Life Cycle và trình diễn Amazon Q Developer
-- **My Nguyen** – Trình diễn Kiro
-
-**Điều phối viên:**
-
-- **Diem My**
-- **Dai Truong**
-- **Dinh Nguyen**
+- Cung cấp tổng quan toàn diện về dịch vụ và khả năng AI/ML của AWS
+- Giới thiệu Amazon SageMaker như một nền tảng ML end-to-end
+- Khám phá Generative AI với Amazon Bedrock
+- Minh họa các ứng dụng thực tế thông qua demo trực tiếp
+- Chia sẻ best practices cho triển khai AI/ML tại Việt Nam
 
 ### Chi Tiết Sự Kiện
 
-- **Ngày**: Thứ Sáu, 3 tháng 10 năm 2025
-- **Thời gian**: 14:00 – 16:30
-- **Địa điểm**: AWS Event Hall, Tầng 26, Tòa nhà Bitexco, thành phố Hồ Chí Minh
-- **Thời lượng**: 2.5 giờ
+- **Ngày**: Thứ Bảy, 15 tháng 11 năm 2025
+- **Thời gian**: 8:30 – 12:00
+- **Địa điểm**: Văn phòng AWS Vietnam
+- **Thời lượng**: 3.5 giờ (không bao gồm nghỉ trưa)
 
 ### Chương Trình
 
-- **14:00 - 14:15**: Đón tiếp
-- **14:15 - 15:30**: Tổng quan về AI-Driven Development Life Cycle và trình diễn Amazon Q Developer (bởi Toan Huynh)
-- **15:30 - 15:45**: Nghỉ giải lao
-- **15:45 - 16:30**: Trình diễn Kiro (bởi My Nguyen)
+#### 8:30 – 9:00 | Đón tiếp & Giới thiệu
+
+- Đăng ký tham gia và networking
+- Tổng quan workshop và mục tiêu học tập
+- Hoạt động phá băng
+- Tổng quan về thị trường AI/ML tại Việt Nam
+
+#### 9:00 – 10:30 | Tổng quan dịch vụ AWS AI/ML
+
+- **Amazon SageMaker** – Nền tảng ML end-to-end
+  - Chuẩn bị và gắn nhãn dữ liệu
+  - Huấn luyện, tinh chỉnh và triển khai mô hình
+  - Khả năng MLOps tích hợp
+- **Demo trực tiếp**: Hướng dẫn SageMaker Studio
+
+#### 10:30 – 10:45 | Nghỉ giải lao
+
+#### 10:45 – 12:00 | Generative AI với Amazon Bedrock
+
+- **Foundation Models**: Claude, Llama, Titan – so sánh & hướng dẫn lựa chọn
+- **Prompt Engineering**: Kỹ thuật, Chain-of-Thought reasoning, Few-shot learning
+- **Retrieval-Augmented Generation (RAG)**: Kiến trúc & Tích hợp Knowledge Base
+- **Bedrock Agents**: Multi-step workflows và tích hợp công cụ
+- **Guardrails**: An toàn và lọc nội dung
+- **Demo trực tiếp**: Xây dựng chatbot Generative AI sử dụng Bedrock
 
 ### Nội Dung Nổi Bật
 
-#### Sự Nổi Lên Của Generative AI Trong Phát Triển Phần Mềm
+#### Nền Tảng Amazon SageMaker
 
-- **Sự biến đổi**: Generative AI tái tưởng tượng cách các nhà phát triển và tổ chức học hỏi, lập kế hoạch, tạo ra, triển khai và quản lý ứng dụng một cách an toàn
-- **Tích hợp SDLC**: AI có thể được tích hợp vào toàn bộ vòng đời phát triển phần mềm: kiến trúc, phát triển, kiểm thử, triển khai và bảo trì
-- **Lợi ích tự động hóa**: Tự động hóa các tác vụ nặng không phân biệt, cho phép các nhà phát triển tập trung vào công việc có giá trị cao và sáng tạo hơn
-- **Tăng năng suất**: Tăng năng suất đồng thời cho phép các nhà phát triển tập trung vào giải quyết vấn đề sáng tạo và đổi mới
+- **Nền Tảng ML Toàn Diện**: Giải pháp hoàn chỉnh cho xây dựng, huấn luyện và triển khai mô hình machine learning
+- **Chuẩn Bị Dữ Liệu**: Công cụ cho gắn nhãn dữ liệu, feature engineering, và validation dữ liệu
+- **Huấn Luyện Mô Hình**: Hỗ trợ các framework và thuật toán ML khác nhau với khả năng huấn luyện phân tán
+- **Triển Khai Mô Hình**: Các tùy chọn triển khai linh hoạt bao gồm real-time inference, batch processing, và serverless inference
+- **Tích Hợp MLOps**: Khả năng tích hợp sẵn cho giám sát mô hình, versioning, và automated workflows
 
-#### AI-Driven Development Life Cycle
+#### Generative AI với Amazon Bedrock
 
-- **Bao phủ end-to-end**: Từ lập kế hoạch kiến trúc ban đầu thông qua phát triển, kiểm thử, triển khai và bảo trì liên tục
-- **Biến đổi workflow**: Cách các công cụ AI định hình lại các workflow phát triển truyền thống
-- **Best practices**: Hướng dẫn để tích hợp AI hiệu quả vào quy trình phát triển hiện có
+- **Lựa Chọn Foundation Model**: Hiểu sự khác biệt giữa các mô hình Claude, Llama, và Titan
+  - **Claude**: Khả năng lý luận và trò chuyện mạnh mẽ
+  - **Llama**: Mô hình mã nguồn mở với hiệu suất tốt
+  - **Titan**: Mô hình do AWS phát triển được tối ưu cho các use case cụ thể
+- **Kỹ Thuật Prompt Engineering**:
+  - Chain-of-Thought reasoning cho giải quyết vấn đề phức tạp
+  - Few-shot learning với ví dụ
+  - Quản lý ngữ cảnh và tối ưu hóa prompt
+- **Kiến Trúc RAG**: Kết hợp retrieval với generation cho phản hồi chính xác, nhận biết ngữ cảnh
+  - Tích hợp knowledge base
+  - Vector embeddings và similarity search
+  - Chiến lược chunking tài liệu
+- **Bedrock Agents**: Tác nhân tự động có thể thực hiện các tác vụ multi-step
+  - Tích hợp công cụ và gọi API
+  - Orchestration workflow
+  - Khả năng ra quyết định
+- **Guardrails cho An Toàn AI**: Lọc nội dung và kiểm soát an toàn
+  - Phát hiện nội dung có hại
+  - Cấu hình policy tùy chỉnh
+  - Tuân thủ và quản trị
 
-#### Amazon Q Developer
+#### Thị Trường AI/ML tại Việt Nam
 
-- **Hỗ trợ SDLC**: Công cụ AI toàn diện hỗ trợ toàn bộ vòng đời phát triển phần mềm
-- **Khả năng chính**: Hỗ trợ tạo mã, gỡ lỗi, kiểm thử, tài liệu hóa và refactoring
-- **Tích hợp**: Tích hợp mượt mà với các IDE và môi trường phát triển phổ biến
-- **Trình diễn thực tế**: Ví dụ thực tế về sử dụng Amazon Q Developer để tăng tốc tác vụ phát triển
-
-#### Kiro
-
-- **AI-powered development**: Giới thiệu Kiro như một trợ lý phát triển AI
-- **Use cases**: Các tình huống cụ thể nơi Kiro nâng cao năng suất của nhà phát triển
-- **Tính năng**: Các tính năng và khả năng chính được trình diễn trong phiên
-- **Trải nghiệm thực hành**: Trình diễn thực tế về Kiro trong hành động
+- Xu hướng và cơ hội áp dụng hiện tại
+- Use cases cụ thể cho thị trường Việt Nam
+- Thách thức và giải pháp cho doanh nghiệp địa phương
+- Câu chuyện thành công và case studies
 
 ### Những Gì Học Được
 
-#### Chiến Lược Tích Hợp AI
+#### Best Practices Machine Learning
 
-- **Áp dụng dần dần**: Bắt đầu với các use case cụ thể và mở rộng dần việc tích hợp công cụ AI
-- **Đảm bảo chất lượng**: Công cụ AI hỗ trợ nhưng giám sát và xem xét của con người vẫn quan trọng
-- **Đường cong học tập**: Hiểu các công cụ AI cần thời gian và thực hành để tối đa hóa lợi ích
-- **Hợp tác nhóm**: AI nâng cao năng suất nhóm nhưng đòi hỏi workflow và hướng dẫn rõ ràng
+- **Cách Tiếp Cận Nền Tảng End-to-end**: Sử dụng SageMaker cho quản lý vòng đời ML hoàn chỉnh
+- **Chất Lượng Dữ Liệu Trước Tiên**: Đầu tư vào chuẩn bị và gắn nhãn dữ liệu để cải thiện hiệu suất mô hình
+- **Tích Hợp MLOps**: Triển khai giám sát và automated workflows ngay từ đầu
+- **Chiến Lược Lựa Chọn Mô Hình**: Chọn mô hình phù hợp dựa trên use case, không chỉ metrics hiệu suất
 
-#### Nâng Cao Workflow Phát Triển
+#### Triển Khai Generative AI
 
-- **Tác vụ tự động**: Xác định các tác vụ lặp đi lặp lại, giá trị thấp có thể được tự động hóa bằng AI
-- **Chất lượng mã**: Sử dụng AI cho code review, kiểm thử và tài liệu để duy trì tiêu chuẩn cao
-- **Tăng tốc**: Tận dụng AI để tăng tốc chu kỳ phát triển mà không hy sinh chất lượng
-- **Học tập liên tục**: Công cụ AI phát triển nhanh chóng—cập nhật các tính năng và best practices mới
+- **Lựa Chọn Foundation Model**: Hiểu điểm mạnh của từng mô hình (Claude, Llama, Titan) cho các scenario khác nhau
+- **Thành Thạo Prompt Engineering**: Chain-of-Thought và Few-shot learning cải thiện đáng kể kết quả
+- **RAG cho Độ Chính Xác**: Sử dụng kiến trúc RAG khi độ chính xác thực tế là quan trọng
+- **Thiết Kế Agent**: Xây dựng agent có thể xử lý multi-step workflows với tích hợp công cụ phù hợp
+- **An Toàn Trước Tiên**: Luôn triển khai guardrails cho lọc nội dung và tuân thủ
 
-#### Năng Suất Và Tập Trung
+#### Sẵn Sàng Sản Xuất
 
-- **Tạo giá trị**: Giải phóng các nhà phát triển khỏi các tác vụ thường ngày để tập trung vào giải quyết vấn đề phức tạp và đổi mới
-- **Tiết kiệm thời gian**: Tiết kiệm thời gian đáng kể trong viết mã, gỡ lỗi và tài liệu hóa
-- **Bổ sung kiến thức**: Công cụ AI giúp thu hẹp khoảng cách kiến thức và cung cấp hỗ trợ theo ngữ cảnh
-- **Khả năng mở rộng**: AI cho phép các nhóm xử lý các dự án lớn hơn với cùng tài nguyên
+- **Bắt Đầu Nhỏ, Mở Rộng Dần**: Bắt đầu với dự án thí điểm trước khi triển khai đầy đủ
+- **Tối Ưu Chi Phí**: Giám sát và tối ưu chi phí inference với các tùy chọn serverless
+- **Bảo Mật & Tuân Thủ**: Triển khai kiểm soát truy cập và biện pháp bảo mật dữ liệu phù hợp
+- **Cải Thiện Liên Tục**: Giám sát hiệu suất mô hình và lặp lại dựa trên phản hồi thực tế
 
 ### Ứng Dụng Vào Công Việc
 
-- **Tích hợp Amazon Q Developer**: Bắt đầu sử dụng nó trong các tác vụ phát triển hàng ngày để tạo mã và hỗ trợ
-- **Khám phá Kiro**: Đánh giá Kiro cho các use case cụ thể trong workflow phát triển của bạn
-- **Thiết lập AI workflows**: Xác định hướng dẫn về khi nào và cách sử dụng công cụ AI trong các dự án nhóm
-- **Đo lường năng suất**: Theo dõi cải thiện về tốc độ phát triển và chất lượng mã sau khi áp dụng công cụ AI
-- **Chia sẻ học hỏi**: Tài liệu hóa best practices và chia sẻ kinh nghiệm với các thành viên nhóm
-- **Cập nhật liên tục**: Theo dõi cập nhật cho các công cụ phát triển AI và tích hợp các tính năng mới khi chúng có sẵn
-
-### Kết Quả Hoặc Giá Trị Đạt Được
-
-Tham gia sự kiện này mang lại giá trị đáng kể thông qua kiến thức mới, kỹ năng và hiểu biết thực tế có thể áp dụng trực tiếp vào các dự án hiện tại và tương lai.
-
-#### Kiến Thức Mới Thu Được
-
-**Khái Niệm AI-Driven Development:**
-
-- Hiểu biết sâu sắc về cách **generative AI** biến đổi vòng đời phát triển phần mềm từ lập kế hoạch đến bảo trì
-- Kiến thức toàn diện về tích hợp công cụ AI vào các giai đoạn khác nhau: thiết kế kiến trúc, tạo mã, kiểm thử, triển khai và giám sát liên tục
-- Hiểu biết về **best practices** cho phát triển hỗ trợ AI, bao gồm khi nào nên tận dụng AI và khi nào phán đoán con người là quan trọng
-
-**Chuyên Môn Amazon Q Developer:**
-
-- Kiến thức thực tế về sử dụng **Amazon Q Developer** cho tạo mã, gỡ lỗi, tài liệu hóa và refactoring
-- Hiểu cách tích hợp Amazon Q Developer với các IDE và môi trường phát triển hiện có
-- Học về các khả năng cụ thể: gợi ý mã thông minh, hỗ trợ kiểm thử tự động, và cải thiện chất lượng mã
-
-**Hiểu Biết Nền Tảng Kiro:**
-
-- Khám phá **Kiro** như một trợ lý phát triển AI và các tính năng độc đáo của nó
-- Kiến thức về các use case cụ thể nơi Kiro có thể nâng cao năng suất của nhà phát triển
-- Hiểu cách Kiro bổ sung cho các công cụ phát triển AI khác trong workflow
-
-#### Kỹ Năng Mới Phát Triển
-
-**Tích Hợp Công Cụ AI:**
-
-- **Kỹ năng**: Khả năng xác định cơ hội tự động hóa AI trong các workflow phát triển
-- **Kỹ năng**: Thành thạo trong tích hợp công cụ AI như Amazon Q Developer vào các tác vụ phát triển hàng ngày
-- **Kỹ năng**: Khả năng đánh giá và lựa chọn công cụ AI phù hợp cho nhu cầu dự án cụ thể
-
-**Nâng Cao Workflow Phát Triển:**
-
-- **Kỹ năng**: Cải thiện khả năng tự động hóa các tác vụ lập trình lặp đi lặp lại mà vẫn duy trì chất lượng mã
-- **Kỹ năng**: Nâng cao khả năng code review bằng phân tích hỗ trợ AI
-- **Kỹ năng**: Thực hành tài liệu hóa tốt hơn thông qua tạo tài liệu bằng AI
-
-**Giải Quyết Vấn Đề Hỗ Trợ AI:**
-
-- **Kỹ năng**: Tận dụng AI cho gỡ lỗi và xử lý sự cố phức tạp
-- **Kỹ năng**: Sử dụng gợi ý AI để cải thiện hiệu quả mã và best practices
-- **Kỹ năng**: Cân bằng hỗ trợ AI với xem xét và phán đoán quan trọng của con người
-
-#### Bài Học Rút Ra
-
-**Hiểu Biết Thực Tế:**
-
-- Công cụ AI là **bộ nhân năng suất** mạnh mẽ nhưng đòi hỏi hiểu biết và tích hợp workflow phù hợp
-- Chiến lược **áp dụng dần dần** hiệu quả hơn việc cố gắng tích hợp tất cả công cụ AI cùng một lúc
-- **Giám sát con người** vẫn cần thiết—AI hỗ trợ nhưng không thay thế chuyên môn và phán đoán của nhà phát triển
-- Đo lường cải thiện năng suất và chất lượng mã giúp biện minh cho việc áp dụng công cụ AI
-
-**Hiểu Biết Chiến Lược:**
-
-- Tích hợp AI thành công đòi hỏi **sự đồng nhất nhóm** và hướng dẫn rõ ràng về cách sử dụng
-- Công cụ AI phát triển nhanh chóng—**cập nhật liên tục** với tính năng mới tối đa hóa giá trị lâu dài
-- Xác định đúng use case là quan trọng—không phải tất cả tác vụ phát triển đều hưởng lợi như nhau từ hỗ trợ AI
-- Chất lượng mã thực sự có thể cải thiện với công cụ AI khi được sử dụng một cách có suy nghĩ và được xem xét đúng cách
-
-#### Đóng Góp Cho Nhóm/Dự Án
-
-**Chia Sẻ Kiến Thức:**
-
-- **Tài liệu hóa**: Tạo ghi chú và tài liệu về best practices từ sự kiện để chia sẻ với các thành viên nhóm
-- **Trình bày**: Chuẩn bị chia sẻ hiểu biết về Amazon Q Developer và Kiro với nhóm phát triển
-- **Hướng dẫn**: Phát triển hướng dẫn ban đầu để tích hợp công cụ AI vào workflow nhóm
-
-**Ứng Dụng Thực Tế:**
-
-- **Dự án thí điểm**: Xác định các dự án cụ thể nơi công cụ AI có thể được thí điểm để đạt được lợi ích năng suất ngay lập tức
-- **Cải thiện workflow**: Đề xuất tích hợp Amazon Q Developer cho code review và tác vụ tài liệu hóa
-- **Đào tạo**: Lập kế hoạch tổ chức các phiên nội bộ về thực hành phát triển dựa trên AI cho nhóm
-
-**Giá Trị Dài Hạn:**
-
-- **Lợi thế cạnh tranh**: Có được kiến thức giúp nhóm tận dụng các công cụ phát triển AI tiên tiến
-- **Cải thiện hiệu quả**: Dự kiến cải thiện 20-30% tốc độ phát triển cho các tác vụ lặp đi lặp lại bằng công cụ AI
-- **Nâng cao chất lượng**: Tiềm năng cải thiện chất lượng mã thông qua xem xét hỗ trợ AI và gợi ý best practices
-- **Đổi mới**: Khả năng mới cho phép nhóm giải quyết các vấn đề phức tạp hơn bằng cách giao phó công việc thường ngày cho AI
-
-#### Phát Triển Cá Nhân
-
-**Phát Triển Kỹ Thuật:**
-
-- Mở rộng hiểu biết về thực hành phát triển phần mềm hiện đại với tích hợp AI
-- Phát triển quan điểm tư duy tiến bộ về sự tiến hóa của kỹ thuật phần mềm
-- Nâng cao khả năng đánh giá và áp dụng công nghệ mới hiệu quả
-
-**Phát Triển Nghề Nghiệp:**
-
-- Tăng tự tin trong làm việc với công cụ phát triển AI
-- Cải thiện khả năng giao tiếp khái niệm kỹ thuật cho cả đối tượng kỹ thuật và phi kỹ thuật
-- Tăng cường kết nối mạng với các nhà phát triển khác quan tâm đến phát triển dựa trên AI
+- **Khám Phá SageMaker**: Bắt đầu với SageMaker Studio cho thử nghiệm ML và phát triển mô hình
+- **Triển Khai Giải Pháp RAG**: Xây dựng knowledge base cho ứng dụng domain-specific sử dụng kiến trúc RAG
+- **Phát Triển Bedrock Agents**: Tạo tác nhân tự động cho dịch vụ khách hàng hoặc tự động hóa workflow
+- **Thực Hành Prompt Engineering**: Áp dụng kỹ thuật Chain-of-Thought và Few-shot để cải thiện phản hồi AI
+- **Triển Khai Guardrails**: Triển khai lọc nội dung và kiểm soát an toàn cho ứng dụng GenAI sản xuất
+- **Thiết Lập MLOps**: Thiết lập giám sát mô hình và automated deployment pipelines sử dụng khả năng SageMaker
 
 ### Trải nghiệm trong event
 
-Tham gia phiên **"AI-Driven Development Life Cycle: Reimagining Software Engineering"** là một trải nghiệm mở mang tầm mắt, cung cấp những hiểu biết sâu sắc về cách generative AI đang biến đổi phát triển phần mềm. Các trải nghiệm chính bao gồm:
+Tham gia workshop **"AI/ML/GenAI on AWS"** là một trải nghiệm học tập đặc biệt cung cấp hiểu biết toàn diện về khả năng AI và machine learning của AWS. Sự kiện kết hợp kiến thức lý thuyết với các trình diễn thực tế, giúp em hiểu rõ cách triển khai giải pháp AI/ML trên AWS.
 
-#### Hiểu về sự biến đổi AI
+#### Học từ chương trình toàn diện
 
-- Học cách **generative AI** đánh dấu sự thay đổi biến đổi trong thực hành phát triển phần mềm.
-- Hiểu biết về tích hợp AI vào toàn bộ **SDLC**: kiến trúc, phát triển, kiểm thử, triển khai và bảo trì.
-- Hiểu cách tự động hóa AI cho phép các nhà phát triển tập trung vào **các tác vụ sáng tạo có giá trị cao hơn**.
+- Chương trình có cấu trúc bao phủ mọi thứ từ khái niệm ML cơ bản đến triển khai Generative AI nâng cao.
+- Bắt đầu với tổng quan nền tảng SageMaker giúp em hiểu vòng đời ML hoàn chỉnh trước khi đi sâu vào chi tiết GenAI.
+- Sự tiến triển từ ML truyền thống đến Generative AI cho thấy sự tiến hóa và tính bổ sung của các công nghệ này.
 
-#### Trình diễn công cụ thực hành
+#### Trải nghiệm kỹ thuật thực hành
 
-- Chứng kiến **Amazon Q Developer** trong hành động, xem cách nó có thể hỗ trợ tạo mã, gỡ lỗi và tài liệu hóa.
-- Khám phá **Kiro** như một trợ lý phát triển AI và tìm hiểu về các khả năng và use case cụ thể của nó.
-- Xem các ví dụ thực tế về cách các công cụ này **tăng tốc phát triển** đồng thời duy trì chất lượng mã.
+- **Hướng dẫn SageMaker Studio** minh họa quy trình thực tế xây dựng mô hình ML, từ chuẩn bị dữ liệu đến triển khai.
+- Em học về các công cụ **gắn nhãn dữ liệu** và cách chúng có thể cải thiện đáng kể độ chính xác mô hình với chất lượng dữ liệu phù hợp.
+- **Khả năng MLOps** cho em thấy cách triển khai continuous integration và giám sát cho mô hình ML trong sản xuất.
 
-#### Học tập thực tế
+#### Tìm hiểu sâu về Generative AI
 
-- Học về **best practices** để tích hợp công cụ AI vào các workflow phát triển hiện có.
-- Hiểu tầm quan trọng của **giám sát con người** và đảm bảo chất lượng khi sử dụng công cụ AI.
-- Hiểu biết về **xác định cơ hội** cho tự động hóa AI trong quy trình phát triển.
+- Phiên **Amazon Bedrock** rất mở mang tầm mắt, cho em thấy cách tận dụng foundation models mà không cần huấn luyện từ đầu.
+- **Kỹ thuật Prompt Engineering** như Chain-of-Thought reasoning và Few-shot learning được minh họa với các ví dụ thực tế.
+- Học về **kiến trúc RAG** giúp em hiểu cách xây dựng ứng dụng AI chính xác kết hợp retrieval với generation.
+- **Demo Bedrock Agents** cho thấy cách xây dựng hệ thống AI tự động có thể thực hiện các tác vụ multi-step phức tạp.
+
+#### Trình diễn thực tế
+
+- Demo trực tiếp xây dựng **chatbot Generative AI** sử dụng Bedrock cho em bức tranh hoàn chỉnh về triển khai từ đầu đến cuối.
+- Xem **Guardrails hoạt động** minh chứng tầm quan trọng của an toàn và lọc nội dung trong ứng dụng GenAI sản xuất.
+- So sánh giữa các mô hình Claude, Llama, và Titan giúp em hiểu khi nào sử dụng mỗi mô hình.
 
 #### Kết nối và thảo luận
 
-- Kết nối với các nhà phát triển khác quan tâm đến phát triển dựa trên AI.
-- Trao đổi ý tưởng về **ứng dụng thực tế** của công cụ AI trong các dự án thực tế.
-- Thảo luận về thách thức và cơ hội trong việc áp dụng công cụ phát triển AI.
+- Workshop cung cấp cơ hội networking tuyệt vời với các người đam mê và thực hành AI/ML khác tại Việt Nam.
+- Thảo luận về **thị trường AI/ML tại Việt Nam** cho em hiểu biết theo ngữ cảnh về cơ hội và thách thức thị trường địa phương.
+- Chia sẻ kinh nghiệm với đồng nghiệp giúp em hiểu các thách thức và giải pháp triển khai thực tế.
 
 #### Bài học rút ra
 
-- Công cụ AI là trợ lý mạnh mẽ nhưng **phán đoán và xem xét của con người** vẫn cần thiết cho mã chất lượng.
-- Tích hợp AI thành công đòi hỏi **áp dụng dần dần** và đào tạo nhóm.
-- Công cụ AI phù hợp có thể **tăng năng suất** đáng kể và giải phóng các nhà phát triển cho công việc sáng tạo hơn.
-- Cập nhật với sự tiến hóa của công cụ AI là rất quan trọng để **tối đa hóa lợi ích**.
+- **SageMaker cung cấp một nền tảng hoàn chỉnh** đơn giản hóa toàn bộ vòng đời ML, từ chuẩn bị dữ liệu đến triển khai.
+- **Foundation models trong Bedrock** loại bỏ nhu cầu huấn luyện mô hình lớn từ đầu, giảm đáng kể thời gian và chi phí.
+- **Kiến trúc RAG là quan trọng** cho xây dựng ứng dụng GenAI chính xác cần tham chiếu knowledge base cụ thể.
+- **Prompt engineering là một kỹ năng** đòi hỏi thực hành và hiểu biết các kỹ thuật khác nhau để có kết quả tối ưu.
+- **Guardrails là cần thiết** cho ứng dụng GenAI sản xuất để đảm bảo an toàn và tuân thủ.
 
 #### Một số hình ảnh khi tham gia sự kiện
 
-![Hình ảnh sự kiện 1](image/z7256907680239_6c02376b407ff8e3fbe7fefa324579da.jpg)
+![Hình ảnh sự kiện 1](image/z7256910502617_55d2844480f1524d7308c3bc6ce8cfdd.jpg)
 
-![Hình ảnh sự kiện 2](image/z7256907683316_27d447197bba7361228eb17937927443.jpg)
+![Hình ảnh sự kiện 2](image/z7256910558448_df59589ade1a4aa08f43460d551aa171.jpg)
 
-![Hình ảnh sự kiện 3](image/z7256907687439_4c543b8ed93cf41f0f91a9e2b69502f9.jpg)
+![Hình ảnh sự kiện 3](image/z7256910563066_18dea17e773ec1e40adc5f1e22660a92.jpg)
 
-![Hình ảnh sự kiện 4](image/z7256907691766_d0c4821ee3e98d7c6e6bc0d6929a7cf6.jpg)
+![Hình ảnh sự kiện 4](image/z7256910575414_15106e3d4aaf66cd74d632e00036895b.jpg)
 
-![Hình ảnh sự kiện 5](image/z7256907695236_949aa8242772b36f247eadaf10bf4a3e.jpg)
+![Hình ảnh sự kiện 5](image/z7256910752648_64054d44e494db64f52c2d7e8ffcfd17.jpg)
 
-![Hình ảnh sự kiện 6](image/z7256907701189_663069450820db42b5153ebeb85795e0.jpg)
+![Hình ảnh sự kiện 6](image/z7256910777979_e729b2c1b395306d992b9d403223a19a.jpg)
 
-![Hình ảnh sự kiện 7](image/z7256907707254_99c456031a5b9eef1ba6387ef3ac36fd.jpg)
+![Hình ảnh sự kiện 7](image/z7256910815978_2d0e269bf8794697504238ed254d42d1.jpg)
 
-![Hình ảnh sự kiện 8](image/z7256907712208_6b95216bc97dd5dff928458a55e67713.jpg)
+![Hình ảnh sự kiện 8](image/z7256910824705_bc167fe70ad9824ccf31b60ef46e1572.jpg)
 
-![Hình ảnh sự kiện 9](image/z7256907716056_fda2225c31b27610d567a823b0da0998.jpg)
+![Hình ảnh sự kiện 9](image/z7256910836582_02a03172ea686e5efb27760e92bdacc3.jpg)
 
-![Hình ảnh sự kiện 10](image/z7256907837500_260c561d9e688421806d02668f18d485.jpg)
+![Hình ảnh sự kiện 10](image/z7256910840839_672e0049c9c9b7a5b9c9893959aca982.jpg)
 
-![Hình ảnh sự kiện 11](image/z7256907843867_163957da09a80200f5a0981edadcdc59.jpg)
+![Hình ảnh sự kiện 11](image/z7256910845709_b914dbf228a60c46d8f566dea71dff55.jpg)
 
-> Tổng thể, sự kiện này mở mang tầm mắt về tiềm năng của phát triển dựa trên AI và cung cấp hướng dẫn thực tế về cách tận dụng những công cụ mạnh mẽ này để nâng cao năng suất, cải thiện chất lượng mã và tập trung vào công việc có giá trị cao trong kỹ thuật phần mềm.
+![Hình ảnh sự kiện 12](image/z7256910851686_bbd93d9c2e8bcf5233462083064f524c.jpg)
+
+![Hình ảnh sự kiện 13](image/z7256910856587_c306aa51cde2f9dfd013add06c6c77ac.jpg)
+
+![Hình ảnh sự kiện 14](image/z7256910860218_90c706cdcc51eaa1721068fb3a9fdc89.jpg)
+
+![Hình ảnh sự kiện 15](image/z7256910863351_303a3f50f5c70e772b22bf0396b4169b.jpg)
+
+![Hình ảnh sự kiện 16](image/z7256910868038_a2dabedaa3467e94d10dbb5a735acac4.jpg)
+
+![Hình ảnh sự kiện 17](image/z7256910874116_9dc11f4cc1d7efc2b7227d63cb3dfafa.jpg)
+
+![Hình ảnh sự kiện 18](image/z7256910878162_b35ddc547efe5620b52d0ee613b71ec5.jpg)
+
+![Hình ảnh sự kiện 19](image/z7256910883639_1270ab348647c85b92700ccc0ff06ddc.jpg)
+
+![Hình ảnh sự kiện 20](image/z7256910887974_2196211e3ad5edee501c053b0b58c0ac.jpg)
+
+![Hình ảnh sự kiện 21](image/z7256910893398_19a1e21bf1268220df1e29fd2e22274b.jpg)
+
+![Hình ảnh sự kiện 22](image/z7256910897113_ad2391887fb50f4677b0552ea391c879.jpg)
+
+![Hình ảnh sự kiện 23](image/z7256910901738_9717347c2edeb9018ac54e378fab36a7.jpg)
+
+![Hình ảnh sự kiện 24](image/z7256910905611_8680667400f075afe618daf0ee8b6c54.jpg)
+
+![Hình ảnh sự kiện 25](image/z7256910910482_bf79397701753b9bb71f9fbaf8a8322a.jpg)
+
+![Hình ảnh sự kiện 26](image/z7256910915535_0ff8bf05ad0a135a44f92305c273a0b4.jpg)
+
+![Hình ảnh sự kiện 27](image/z7256910918732_7971a90291c488a4895b282d1e2e96e2.jpg)
+
+![Hình ảnh sự kiện 28](image/z7256910922364_2e3b1d9b183e3bfcc9f8fac12a76114d.jpg)
+
+![Hình ảnh sự kiện 29](image/z7256910927626_ddb65d8c26c112eec5942a930dd8e961.jpg)
+
+![Hình ảnh sự kiện 30](image/z7256910931131_b21e9486856e92288f50c8f7d2d56298.jpg)
+
+![Hình ảnh sự kiện 31](image/z7256910936926_ac8300d7a1bd121c1ef46a326347c706.jpg)
+
+> Tổng thể, workshop này cung cấp cho em cả kiến thức nền tảng và kỹ năng thực tế cần thiết để triển khai giải pháp AI/ML và Generative AI trên AWS. Sự kết hợp giữa tổng quan nền tảng toàn diện, khả năng GenAI chi tiết, và các trình diễn thực hành cho em tự tin bắt đầu xây dựng các ứng dụng được hỗ trợ bởi AI.
