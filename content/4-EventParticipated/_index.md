@@ -14,11 +14,11 @@ pre: " <b> 4. </b> "
 > - Date and time
 > - Location (if applicable)
 > - Your role in the event (attendee, event support, speaker, etc.)
-> - A brief description of the event’s content and main activities
+> - A brief description of the event's content and main activities
 > - Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
 > - This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
 
-During my internship, I participated in three events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+During my internship, I participated in six events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)
 
@@ -71,3 +71,57 @@ During my internship, I participated in three events. Each one was a memorable e
 - **Lessons Learned**: I learned about DevOps culture and principles, including DORA metrics (Deployment Frequency, Lead Time, MTTR, Change Failure Rate) for measuring DevOps maturity. I gained deep understanding of AWS CI/CD services (CodeCommit, CodeBuild, CodeDeploy, CodePipeline) and different deployment strategies (Blue/Green, Canary, Rolling). I also learned about Infrastructure as Code with CloudFormation and CDK, and when to use each approach.
 - **New Skills**: I developed skills in building complete CI/CD pipelines using AWS DevOps services. I learned how to implement Infrastructure as Code with both CloudFormation and CDK. I gained practical knowledge of container services (ECR, ECS, EKS, App Runner) and when to use each one. I also learned how to set up monitoring and observability using CloudWatch and X-Ray.
 - **Contribution to Team/Project**: I shared comprehensive notes about AWS DevOps services and best practices with my team. I proposed implementing CI/CD pipelines using CodePipeline for automated deployments. I suggested adopting Infrastructure as Code for all our infrastructure using CloudFormation or CDK. I also created guidelines for containerization strategies and monitoring best practices. The knowledge gained helps our team implement modern DevOps practices and improve deployment frequency and reliability.
+
+---
+
+### [Event 4](4.4-Event4/)
+
+&emsp;**Event Name:** AWS Well-Architected Security Pillar
+
+&emsp;**Date & Time:** 08:30, November 29, 2025
+
+&emsp;**Location:** AWS Vietnam Office, Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+
+&emsp;**Role:** Attendee
+
+&emsp;**Outcomes or Value Gained:**
+
+- **Lessons Learned**: I learned about the AWS Well-Architected Framework Security Pillar and its five core pillars: Identity & Access Management, Detection, Infrastructure Protection, Data Protection, and Incident Response. I gained deep understanding of core security principles including Least Privilege, Zero Trust, and Defense in Depth. I also learned about the Shared Responsibility Model and top security threats in cloud environments in Vietnam. The importance of building security into architecture from the start, not as an afterthought, was emphasized.
+- **New Skills**: I developed skills in modern IAM architecture using IAM Identity Center, Service Control Policies, and permission boundaries. I learned how to implement comprehensive detection and monitoring using CloudTrail, GuardDuty, and Security Hub. I gained practical knowledge of network security with VPC segmentation, Security Groups, NACLs, WAF, and Shield. I also learned about encryption at rest and in transit, KMS key management, and secrets management with Secrets Manager and Parameter Store.
+- **Contribution to Team/Project**: I shared comprehensive security best practices and the five pillars framework with my team. I proposed implementing modern IAM patterns with IAM Identity Center for SSO. I suggested setting up comprehensive monitoring using CloudTrail, GuardDuty, and Security Hub. I created incident response playbooks for common scenarios like compromised IAM keys, S3 public exposure, and EC2 malware detection. I also developed guidelines for encryption strategies and secrets management. The knowledge gained helps our team build secure cloud architectures following AWS Well-Architected best practices.
+
+---
+
+### [Event 5](4.5-Event5/)
+
+&emsp;**Event Name:** DevOps on AWS
+
+&emsp;**Date & Time:** 08:30, November 17, 2025
+
+&emsp;**Location:** Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+
+&emsp;**Role:** Attendee
+
+&emsp;**Outcomes or Value Gained:**
+
+- **Lessons Learned**: I learned about DevOps culture and principles, including DORA metrics (Deployment Frequency, Lead Time, MTTR, Change Failure Rate) for measuring DevOps maturity. I gained deep understanding of AWS CI/CD services (CodeCommit, CodeBuild, CodeDeploy, CodePipeline) and different deployment strategies (Blue/Green, Canary, Rolling). I also learned about Infrastructure as Code with CloudFormation and CDK, and when to use each approach.
+- **New Skills**: I developed skills in building complete CI/CD pipelines using AWS DevOps services. I learned how to implement Infrastructure as Code with both CloudFormation and CDK. I gained practical knowledge of container services (ECR, ECS, EKS, App Runner) and when to use each one. I also learned how to set up monitoring and observability using CloudWatch and X-Ray.
+- **Contribution to Team/Project**: I shared comprehensive notes about AWS DevOps services and best practices with my team. I proposed implementing CI/CD pipelines using CodePipeline for automated deployments. I suggested adopting Infrastructure as Code for all our infrastructure using CloudFormation or CDK. I also created guidelines for containerization strategies and monitoring best practices. The knowledge gained helps our team implement modern DevOps practices and improve deployment frequency and reliability.
+
+---
+
+### [Event 6](4.6-Event6/)
+
+&emsp;**Event Name:** Kick-off AWS First Cloud Journey Workforce OJT FALL 2025
+
+&emsp;**Date & Time:** 08:30, September 6, 2025
+
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 2 Hải Triều, P. Bến Nghé, Quận 1, TP.HCM
+
+&emsp;**Role:** Attendee
+
+&emsp;**Outcomes or Value Gained:**
+
+- **Lessons Learned**: I learned about the AWS First Cloud Journey Workforce program, which has trained over 2,000 students since 2021, with more than 150 graduates working at leading technology companies. I gained insights into various career pathways in cloud computing including DevOps, Cloud Engineer, and AI/ML Engineer roles. I learned about the importance of continuous learning, networking, and setting clear career goals. The event emphasized that cloud computing offers diverse career paths and that security, DevOps, and AI/ML are all viable and rewarding directions.
+- **New Skills**: I developed a better understanding of career development in cloud computing and learned about the skills required for different roles. I gained insights into how to build a career path from junior to principal level. I also learned about the importance of soft skills alongside technical skills, and how to leverage community and mentorship for career growth.
+- **Contribution to Team/Project**: I shared the program information and career insights with my team. I documented the different career pathways and skill requirements for various cloud roles. I created a personal development plan based on the roadmap shared by speakers. I also identified networking opportunities and connections that could benefit our team. The knowledge gained helps me understand the broader cloud computing ecosystem and plan my career development accordingly.
