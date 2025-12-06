@@ -1,28 +1,28 @@
 ﻿---
-title: "Event 4"
-date: 2025-01-15
+title: "Event 5"
+date: 2025-12-05
 weight: 1
 chapter: false
-pre: " <b> 4.4. </b> "
+pre: " <b> 4.5. </b> "
 ---
 
-# Bài thu hoạch "AWS Bedrock Agent Workshop"
+# Bài thu hoạch "Building Agentic AI: Context Optimization with Amazon Bedrock"
 
 ### Mục Đích Của Sự Kiện
 
-- Giới thiệu AWS Bedrock Agent và khả năng xây dựng agentic workflows
-- Trình diễn các tính năng core của AWS Bedrock Agent
-- Chia sẻ use case thực tế về xây dựng agentic workflow trên AWS
+- Giới thiệu về Building Agentic AI và Context Optimization với Amazon Bedrock
+- Xây dựng autonomous AI agents với Amazon Bedrock thông qua hands-on techniques
+- Chia sẻ real-world use cases về agentic workflows
 - Giới thiệu CloudThinker và giải pháp Agentic Orchestration
 - Cung cấp hands-on workshop với môi trường AWS thực tế
 - Kết nối với các chuyên gia AWS và AI practitioners
 
 ### Chi Tiết Sự Kiện
 
-- **Ngày**: Thứ Bảy, 15 tháng 1 năm 2025
-- **Thời gian**: 9:00 – 12:00
-- **Địa điểm**: AWS Office hoặc Online
-- **Thời lượng**: 3 giờ (bao gồm tea break và networking)
+- **Ngày**: Thứ Sáu, 05 tháng 12 năm 2025
+- **Thời gian**: 9:00 – 12:00 (Check-in từ 8:15)
+- **Địa điểm**: Tầng 26, Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+- **Thời lượng**: 3 giờ (bao gồm tea break, networking và lunch buffet)
 
 ### Chương Trình
 
@@ -31,7 +31,8 @@ pre: " <b> 4.4. </b> "
 **Nguyen Gia Hung**, Head of Solutions Architect, AWS
 
 - Chào mừng và giới thiệu sự kiện
-- Tổng quan về AWS Bedrock và AI agents
+- Tổng quan về Building Agentic AI
+- Context Optimization với Amazon Bedrock
 
 #### 9:10 – 9:40 | AWS Bedrock Agent Core (30 phút)
 
@@ -40,34 +41,39 @@ pre: " <b> 4.4. </b> "
 - Giới thiệu AWS Bedrock Agent
 - Kiến trúc và các thành phần chính
 - Cách thức hoạt động của Bedrock Agent
+- Context management và optimization
 - Tích hợp với các dịch vụ AWS khác
 - Demo: Tạo và cấu hình Bedrock Agent cơ bản
 
 #### 9:40 – 10:00 | [Use Case] Building Agentic Workflow on AWS (20 phút)
 
-**Viet Pham**, Founder & CEO, Azure
+**Viet Pham**, Founder & CEO, Diaflow
 
-- Use case thực tế về agentic workflow
+- Use case thực tế về building agentic workflow
 - Kiến trúc và best practices
 - Challenges và solutions
-- Demo: Agentic workflow trong production
+- Context optimization trong production
+- Demo: Agentic workflow trong thực tế
 
 #### 10:00 – 10:10 | CloudThinker Introduction (10 phút)
 
-**Thang Ton**, Co-founder & COO, Kubernetes
+**Thang Ton**, Co-founder & COO, CloudThinker
 
 - Giới thiệu về CloudThinker
-- Giải pháp và sản phẩm
+- Giải pháp Agentic Orchestration
 - Tầm nhìn và roadmap
+- Integration với Amazon Bedrock
 
 #### 10:10 – 10:40 | CloudThinker Agentic Orchestration, Context Optimization on Amazon Bedrock (L300) (30 phút)
 
-**Henry Bui**, Head of Engineering, Kubernetes
+**Henry Bui**, Head of Engineering, CloudThinker
 
 - Agentic orchestration patterns
-- Context optimization techniques
+- Context optimization techniques nâng cao
 - Tích hợp với Amazon Bedrock
 - Advanced use cases và best practices
+- Performance optimization
+- Cost optimization strategies
 - Demo: CloudThinker platform
 
 #### 10:40 – 11:00 | Tea Break & Networking (20 phút)
@@ -75,6 +81,7 @@ pre: " <b> 4.4. </b> "
 - Nghỉ giải lao
 - Networking với các chuyên gia và participants
 - Q&A không chính thức
+- Complimentary refreshments
 
 #### 11:00 – 12:00 | CloudThinker Hack: Hands-on Workshop (60 phút)
 
@@ -82,7 +89,8 @@ pre: " <b> 4.4. </b> "
 
 - Hands-on workshop với môi trường AWS thực tế
 - Xây dựng Bedrock Agent từ đầu
-- Thực hành agentic orchestration
+- Thực hành context optimization
+- Agentic orchestration patterns
 - Troubleshooting và best practices
 - Q&A và hỗ trợ trực tiếp
 
@@ -91,54 +99,72 @@ pre: " <b> 4.4. </b> "
 - Networking mở rộng
 - Lunch buffet
 - Gặp gỡ các chuyên gia
+- Chia sẻ experiences và learnings
 
 ### Meet Our Experts
 
 #### Nguyen Gia Hung
 **Head of Solutions Architect**, AWS
 
-- Chuyên gia về AWS architecture và best practices
-- Kinh nghiệm trong việc thiết kế và triển khai giải pháp cloud
+- Chuyên gia hàng đầu về AWS architecture và solutions
+- Kinh nghiệm sâu rộng trong việc tư vấn và triển khai giải pháp cloud
+- Người dẫn dắt các chương trình AWS tại Việt Nam
 
 #### Kien Nguyen
 **Solutions Architect**, AWS
 
 - Chuyên gia về AWS Bedrock và AI services
 - Kinh nghiệm trong việc xây dựng AI/ML solutions
+- Expert về agentic AI và context optimization
 
 #### Viet Pham
-**Founder & CEO**, Azure
+**Founder & CEO**, Diaflow
 
 - Entrepreneur với kinh nghiệm trong AI và cloud computing
 - Chuyên gia về agentic workflows và automation
+- Founder của Diaflow - giải pháp AI workflow
 
 #### Kha Van
 **Community Leader**, AWS
 
 - AWS Community Leader
 - Chuyên gia về hands-on training và workshops
+- Mentor cho AWS community
 
 #### Thang Ton
-**Co-Founder & COO**, Kubernetes
+**Co-Founder & COO**, CloudThinker
 
 - Co-founder của CloudThinker
 - Chuyên gia về cloud orchestration và automation
+- Expert về agentic orchestration platforms
 
 #### Henry Bui
-**Head of Engineering**, Kubernetes
+**Head of Engineering**, CloudThinker
 
 - Chuyên gia về agentic orchestration
 - Kinh nghiệm trong việc tối ưu hóa context và performance
+- Expert về L300 technical deep-dive sessions
 
 ### Nội Dung Nổi Bật
 
+#### Building Agentic AI
+
+**Giới thiệu Agentic AI:**
+
+- Agentic AI là gì và tại sao quan trọng
+- Autonomous AI agents vs traditional AI
+- Use cases và applications
+- Future of AI với agentic systems
+
+**Context Optimization:**
+
+- Tại sao context optimization quan trọng
+- Techniques để optimize context
+- Cost reduction strategies
+- Performance improvement
+- Best practices
+
 #### AWS Bedrock Agent Core
-
-**Giới thiệu AWS Bedrock Agent:**
-
-- AWS Bedrock Agent là dịch vụ cho phép xây dựng AI agents có khả năng thực hiện các tác vụ phức tạp
-- Agents có thể truy cập knowledge bases, gọi APIs, và thực hiện các hành động tự động
-- Tích hợp với các foundation models trên Amazon Bedrock
 
 **Kiến trúc Bedrock Agent:**
 
@@ -146,11 +172,12 @@ pre: " <b> 4.4. </b> "
 - **Knowledge Base**: Nguồn thông tin cho agent
 - **Action Groups**: Các hành động agent có thể thực hiện
 - **Orchestration**: Quản lý flow và context
+- **Context Management**: Tối ưu hóa context
 
 **Tính năng chính:**
 
 - Natural language understanding
-- Context management
+- Context management và optimization
 - Multi-step reasoning
 - Integration với AWS services
 - Custom actions và workflows
@@ -161,6 +188,7 @@ pre: " <b> 4.4. </b> "
 
 - Thiết kế workflow phức tạp với nhiều agents
 - Orchestration và coordination giữa các agents
+- Context optimization trong workflows
 - Error handling và retry logic
 - Monitoring và observability
 
@@ -169,6 +197,7 @@ pre: " <b> 4.4. </b> "
 - Design patterns cho agentic workflows
 - Context management strategies
 - Performance optimization
+- Cost optimization
 - Security và compliance
 
 #### CloudThinker Agentic Orchestration
@@ -179,13 +208,15 @@ pre: " <b> 4.4. </b> "
 - Parallel execution
 - Conditional branching
 - Error recovery và fallback
+- Context sharing giữa agents
 
-**Context Optimization:**
+**Context Optimization Techniques:**
 
 - Context compression và summarization
 - Relevant information extraction
 - Memory management
 - Cost optimization strategies
+- Performance tuning
 
 **Integration với Amazon Bedrock:**
 
@@ -193,75 +224,89 @@ pre: " <b> 4.4. </b> "
 - Custom model selection
 - Prompt engineering và optimization
 - Response formatting và validation
+- Context optimization APIs
 
 ### Những Gì Học Được
 
-#### Hiểu về AWS Bedrock Agent
+#### Hiểu về Building Agentic AI
 
-- **Bedrock Agent là gì**: Dịch vụ AWS cho phép xây dựng AI agents thông minh
-- **Kiến trúc và components**: Hiểu cách agent hoạt động và tương tác với các dịch vụ khác
-- **Use cases**: Các trường hợp sử dụng thực tế cho Bedrock Agent
+- **Agentic AI là gì**: Autonomous AI agents có khả năng thực hiện tasks độc lập
+- **Context Optimization**: Techniques để optimize context và giảm costs
+- **Use cases**: Các trường hợp sử dụng thực tế cho agentic AI
+- **Architecture**: Kiến trúc và design patterns
+
+#### AWS Bedrock Agent
+
+- **Bedrock Agent Core**: Hiểu cách agent hoạt động và tương tác
+- **Context Management**: Quản lý và optimize context
 - **Integration**: Cách tích hợp với các AWS services khác
+- **Best Practices**: Best practices từ AWS experts
 
 #### Agentic Workflow Design
 
 - **Workflow patterns**: Các pattern phổ biến cho agentic workflows
 - **Orchestration**: Cách quản lý và điều phối nhiều agents
+- **Context Optimization**: Strategies cho context optimization
 - **Error handling**: Strategies cho xử lý lỗi và recovery
-- **Best practices**: Best practices từ các use cases thực tế
 
 #### CloudThinker Platform
 
 - **Agentic orchestration**: Cách CloudThinker giải quyết orchestration challenges
-- **Context optimization**: Techniques để tối ưu hóa context và giảm cost
+- **Context optimization**: Advanced techniques để optimize context
 - **Platform capabilities**: Các tính năng và khả năng của CloudThinker
 - **Integration patterns**: Cách tích hợp CloudThinker vào existing systems
 
 #### Hands-on Experience
 
 - **Practical skills**: Kỹ năng thực tế trong việc xây dựng Bedrock Agents
+- **Context optimization**: Thực hành context optimization techniques
 - **Troubleshooting**: Cách debug và troubleshoot common issues
-- **Optimization**: Techniques để optimize performance và cost
 - **Real-world scenarios**: Làm việc với các scenarios thực tế
 
 ### Ứng Dụng Vào Công Việc
 
-- **Xây dựng AI Agents**: Sử dụng AWS Bedrock Agent để xây dựng AI agents cho các use cases cụ thể
+- **Xây dựng Agentic AI**: Sử dụng AWS Bedrock Agent để xây dựng autonomous AI agents
+- **Context Optimization**: Áp dụng context optimization techniques để giảm costs và improve performance
 - **Thiết kế Workflows**: Áp dụng agentic workflow patterns vào các dự án
-- **Tối ưu hóa Context**: Sử dụng context optimization techniques để giảm cost và improve performance
 - **Tích hợp CloudThinker**: Đánh giá và tích hợp CloudThinker vào existing solutions
 - **Best Practices**: Áp dụng best practices từ workshop vào production systems
 
 ### Trải nghiệm trong event
 
-Tham gia workshop **"AWS Bedrock Agent Workshop"** là một trải nghiệm học tập chuyên sâu về AI agents và agentic workflows trên AWS. Sự kiện cung cấp cả kiến thức lý thuyết và hands-on practice, giúp em hiểu rõ về cách xây dựng và triển khai AI agents thực tế.
+Tham gia workshop **"Building Agentic AI: Context Optimization with Amazon Bedrock"** là một trải nghiệm học tập chuyên sâu về agentic AI và context optimization. Sự kiện cung cấp cả kiến thức lý thuyết và hands-on practice, giúp em hiểu rõ về cách xây dựng và tối ưu hóa autonomous AI agents.
 
-#### Học về AWS Bedrock Agent Core
+#### Opening và giới thiệu
 
-- Phiên **AWS Bedrock Agent Core** của Kien Nguyen cung cấp foundation vững chắc về Bedrock Agent.
+- **Opening session** của Nguyen Gia Hung tạo không khí chuyên nghiệp và inspiring.
+- Em hiểu về tầm quan trọng của Building Agentic AI và Context Optimization.
+- **Overview** về event agenda giúp em hình dung rõ hành trình học tập.
+
+#### AWS Bedrock Agent Core
+
+- **Session của Kien Nguyen** cung cấp foundation vững chắc về Bedrock Agent.
 - Em học về kiến trúc, components, và cách thức hoạt động của Bedrock Agent.
+- **Context management** là điểm nhấn quan trọng trong session này.
 - **Demo tạo Bedrock Agent** cho thấy quy trình thực tế từ đầu đến cuối.
-- Hiểu về integration với các AWS services khác giúp em thấy bức tranh tổng thể.
 
 #### Use Case thực tế
 
 - **Use case presentation** của Viet Pham minh họa cách agentic workflows được sử dụng trong production.
 - Học về challenges thực tế và cách giải quyết chúng.
+- **Context optimization trong production** rất practical và insightful.
 - **Demo agentic workflow** cho thấy performance và capabilities trong thực tế.
-- Insights về best practices từ real-world experience.
 
 #### CloudThinker Platform
 
 - **CloudThinker introduction** của Thang Ton giới thiệu về platform và giải pháp.
-- **Agentic orchestration session** của Henry Bui đi sâu vào technical details và advanced patterns.
-- Học về context optimization techniques để improve performance và reduce costs.
+- **L300 session** của Henry Bui đi sâu vào technical details và advanced patterns.
+- Học về context optimization techniques nâng cao để improve performance và reduce costs.
 - **Demo CloudThinker platform** cho thấy capabilities và ease of use.
 
 #### Hands-on Workshop
 
 - **Hands-on workshop** của Kha Van cung cấp cơ hội thực hành trực tiếp.
 - Xây dựng Bedrock Agent từ đầu với guidance từ expert.
-- Thực hành agentic orchestration và context optimization.
+- Thực hành context optimization và agentic orchestration.
 - **Troubleshooting session** giúp em hiểu cách giải quyết common issues.
 - **Q&A trực tiếp** cung cấp answers cho specific questions.
 
@@ -274,10 +319,10 @@ Tham gia workshop **"AWS Bedrock Agent Workshop"** là một trải nghiệm h�
 
 #### Bài học rút ra
 
-- **AI Agents là tương lai**: Bedrock Agent cung cấp powerful platform để xây dựng intelligent agents.
-- **Orchestration là key**: Proper orchestration là critical cho complex agentic workflows.
-- **Context optimization matters**: Optimizing context có thể significantly reduce costs và improve performance.
+- **Agentic AI là tương lai**: Autonomous AI agents sẽ thay đổi cách chúng ta xây dựng AI applications.
+- **Context Optimization là key**: Optimizing context có thể significantly reduce costs và improve performance.
 - **Hands-on practice is essential**: Practical experience là crucial để truly understand và apply concepts.
+- **Platform solutions matter**: CloudThinker và các platforms tương tự simplify việc xây dựng agentic systems.
 - **Community is valuable**: Networking với experts và practitioners cung cấp valuable insights và opportunities.
 
 #### Một số hình ảnh khi tham gia sự kiện
@@ -342,7 +387,7 @@ Tham gia workshop **"AWS Bedrock Agent Workshop"** là một trải nghiệm h�
 
 ![Hình ảnh sự kiện 30](image/z7298630499752_e2d8d2fa73d6be1ca6c34d36b0117404.jpg)
 
-> Tổng thể, workshop này cung cấp cho em kiến thức toàn diện về AWS Bedrock Agent và agentic workflows. Sự kết hợp giữa lý thuyết, use cases thực tế, và hands-on practice cho em tự tin để bắt đầu xây dựng AI agents trên AWS. Đặc biệt, phần hands-on workshop và networking với các chuyên gia cung cấp insights và connections có giá trị cho sự phát triển nghề nghiệp của em trong lĩnh vực AI và cloud computing.
+> Tổng thể, workshop này cung cấp cho em kiến thức toàn diện về Building Agentic AI và Context Optimization với Amazon Bedrock. Sự kết hợp giữa lý thuyết, use cases thực tế, và hands-on practice cho em tự tin để bắt đầu xây dựng autonomous AI agents trên AWS. Đặc biệt, phần về context optimization và hands-on workshop cung cấp practical skills có thể áp dụng ngay vào công việc. Workshop này là essential cho bất kỳ ai muốn hiểu sâu về agentic AI và cách optimize context để giảm costs và improve performance.
 
 ### What's Included:
 

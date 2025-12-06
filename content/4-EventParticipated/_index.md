@@ -6,18 +6,6 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.
->
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
->
-> - Event name
-> - Date and time
-> - Location (if applicable)
-> - Your role in the event (attendee, event support, speaker, etc.)
-> - A brief description of the event's content and main activities
-> - Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> - This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
-
 During my internship, I participated in six events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
 
 ### [Event 1](4.1-Event1/)
@@ -94,19 +82,19 @@ During my internship, I participated in six events. Each one was a memorable exp
 
 ### [Event 5](4.5-Event5/)
 
-&emsp;**Event Name:** DevOps on AWS
+&emsp;**Event Name:** Building Agentic AI: Context Optimization with Amazon Bedrock
 
-&emsp;**Date & Time:** 08:30, November 17, 2025
+&emsp;**Date & Time:** 09:00, December 5, 2025
 
-&emsp;**Location:** Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
+&emsp;**Location:** 26th Floor, Bitexco Financial Tower, 2 Đ. Hải Triều, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh
 
 &emsp;**Role:** Attendee
 
 &emsp;**Outcomes or Value Gained:**
 
-- **Lessons Learned**: I learned about DevOps culture and principles, including DORA metrics (Deployment Frequency, Lead Time, MTTR, Change Failure Rate) for measuring DevOps maturity. I gained deep understanding of AWS CI/CD services (CodeCommit, CodeBuild, CodeDeploy, CodePipeline) and different deployment strategies (Blue/Green, Canary, Rolling). I also learned about Infrastructure as Code with CloudFormation and CDK, and when to use each approach.
-- **New Skills**: I developed skills in building complete CI/CD pipelines using AWS DevOps services. I learned how to implement Infrastructure as Code with both CloudFormation and CDK. I gained practical knowledge of container services (ECR, ECS, EKS, App Runner) and when to use each one. I also learned how to set up monitoring and observability using CloudWatch and X-Ray.
-- **Contribution to Team/Project**: I shared comprehensive notes about AWS DevOps services and best practices with my team. I proposed implementing CI/CD pipelines using CodePipeline for automated deployments. I suggested adopting Infrastructure as Code for all our infrastructure using CloudFormation or CDK. I also created guidelines for containerization strategies and monitoring best practices. The knowledge gained helps our team implement modern DevOps practices and improve deployment frequency and reliability.
+- **Lessons Learned**: I learned about Building Agentic AI and Context Optimization with Amazon Bedrock. I gained deep understanding of how to build autonomous AI agents with Amazon Bedrock through hands-on techniques. I learned about agentic orchestration patterns and advanced context optimization techniques. I also understood the importance of context optimization in reducing costs and improving performance. The workshop emphasized that agentic AI is the future of AI applications and context optimization is key to scaling effectively.
+- **New Skills**: I developed skills in building Bedrock Agents from scratch with guidance from experts. I learned about context optimization techniques such as compression, summarization, and relevant information extraction. I gained practical knowledge of agentic orchestration patterns and how to coordinate multiple agents. I also learned about the CloudThinker platform and how it simplifies building agentic systems. The hands-on workshop gave me opportunities to practice with real AWS environments.
+- **Contribution to Team/Project**: I shared comprehensive notes about Building Agentic AI and Context Optimization with my team. I proposed pilot projects using Bedrock Agents for automation tasks. I created guidelines for context optimization best practices to reduce costs and improve performance. I also documented CloudThinker platform capabilities and integration patterns. The knowledge gained helps our team explore agentic AI solutions and optimize costs in AI/ML projects.
 
 ---
 
