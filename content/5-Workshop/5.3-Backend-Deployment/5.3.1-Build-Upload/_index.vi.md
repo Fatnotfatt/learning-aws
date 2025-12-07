@@ -97,4 +97,4 @@ aws ec2 describe-instances \
 
 **Lưu ý:** Lưu instance ID cho phần tiếp theo.
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/complete.png)
+![endpoint](img_1.png)

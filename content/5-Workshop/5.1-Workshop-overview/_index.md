@@ -1,4 +1,4 @@
----
+![img.png](img.png)---
 title: "Introduction"
 date: 2025-09-09
 weight: 1
@@ -36,4 +36,4 @@ This workshop demonstrates how to deploy a complete **full-stack web application
 - **Cost Optimization**: VPC endpoints to reduce NAT Gateway data transfer costs
 - **Scalability**: Auto Scaling based on CPU metrics
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+![overview](/img.png)

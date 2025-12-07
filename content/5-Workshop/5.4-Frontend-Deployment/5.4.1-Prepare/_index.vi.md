@@ -70,5 +70,5 @@ VITE_COGNITO_REGION=ap-southeast-1
 
 **Lưu ý:** Cập nhật `VITE_API_URL` với API Gateway URL thực tế từ bước 3 ở trên nếu khác.
 
-![Create stack](/images/5-Workshop/5.4-S3-onprem/create-stack.png)
+![Create stack](img.png)
 

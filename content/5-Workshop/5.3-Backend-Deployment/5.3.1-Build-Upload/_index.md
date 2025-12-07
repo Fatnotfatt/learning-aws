@@ -97,4 +97,4 @@ aws ec2 describe-instances \
 
 **Note:** Save the instance ID for the next section.
 
-![endpoint](/images/5-Workshop/5.3-S3-vpc/complete.png)
+![endpoint](img_1.png)

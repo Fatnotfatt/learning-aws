@@ -12,19 +12,19 @@ For this workshop, you will use **AWS Session Manager** to access EC2 instances.
 
 1. In the **AWS Management Console**, start typing `Systems Manager` in the quick search box and press **Enter**:
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm.png)
+![system manager](img.png)
 
 2. From the **Systems Manager** menu, find **Node Management** in the left menu and click **Session Manager**:
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm1.png)
+![system manager](img_1.png)
 
 3. Click **Start Session**, and select the EC2 instance from your Auto Scaling Group (use the instance ID you saved from the previous section).
 
-![Start session](/images/5-Workshop/5.3-S3-vpc/start-session.png)
+![Start session](img_1.png)
 
 **Session Manager** will open a new browser tab with a shell prompt: `sh-4.2 $`
 
-![Success](/images/5-Workshop/5.3-S3-vpc/start-session-success.png)
+![Success](img_2.png)
 
 #### Deploy Backend Application
 

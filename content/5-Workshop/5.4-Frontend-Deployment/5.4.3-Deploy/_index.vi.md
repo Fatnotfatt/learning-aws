@@ -107,7 +107,7 @@ https://d3gmmg22uirq0t.cloudfront.net
    - Thử đăng nhập hoặc đăng ký user mới
    - Xác minh API calls đang hoạt động (kiểm tra browser console cho lỗi)
 
-![check bucket](/images/5-Workshop/5.4-S3-onprem/check-bucket.png)
+![check bucket](img.png)
 
 #### Tóm Tắt Phần
 

@@ -36,4 +36,4 @@ Workshop này hướng dẫn cách triển khai một **ứng dụng web full-st
 - **Tối Ưu Chi Phí**: VPC endpoints để giảm chi phí data transfer của NAT Gateway
 - **Khả Năng Mở Rộng**: Auto Scaling dựa trên CPU metrics
 
-![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)
+![overview](img.png)

@@ -17,7 +17,7 @@ The deployment process includes:
 - Invalidating CloudFront cache
 - Verifying the frontend is accessible
 
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+![Interface endpoint architecture](img.png)
 
 #### Content
 

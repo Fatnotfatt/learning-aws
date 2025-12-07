@@ -107,7 +107,7 @@ https://d3gmmg22uirq0t.cloudfront.net
    - Try logging in or registering a new user
    - Verify API calls are working (check browser console for errors)
 
-![check bucket](/images/5-Workshop/5.4-S3-onprem/check-bucket.png)
+![check bucket](img.png)
 
 #### Section Summary
 

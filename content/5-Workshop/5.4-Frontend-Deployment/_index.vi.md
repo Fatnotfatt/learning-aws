@@ -17,7 +17,7 @@ Quá trình triển khai bao gồm:
 - Invalidate CloudFront cache
 - Xác minh frontend có thể truy cập được
 
-![Interface endpoint architecture](/images/5-Workshop/5.4-S3-onprem/diagram3.png)
+![Interface endpoint architecture](img.png)
 
 #### Nội Dung
 

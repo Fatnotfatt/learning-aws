@@ -12,19 +12,20 @@ Trong workshop này, bạn sẽ sử dụng **AWS Session Manager** để truy c
 
 1. Trong **AWS Management Console**, bắt đầu gõ `Systems Manager` trong hộp tìm kiếm nhanh và nhấn **Enter**:
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm.png)
+![system manager](img.png)
 
 2. Từ menu **Systems Manager**, tìm **Node Management** trong menu bên trái và click **Session Manager**:
 
-![system manager](/images/5-Workshop/5.3-S3-vpc/sm1.png)
+![system manager](img.png)
 
 3. Click **Start Session**, và chọn EC2 instance từ Auto Scaling Group của bạn (sử dụng instance ID bạn đã lưu từ phần trước).
 
-![Start session](/images/5-Workshop/5.3-S3-vpc/start-session.png)
+![Start session](img_1.png)
+
 
 **Session Manager** sẽ mở một tab trình duyệt mới với shell prompt: `sh-4.2 $`
 
-![Success](/images/5-Workshop/5.3-S3-vpc/start-session-success.png)
+![Success](img_2.png)
 
 #### Triển Khai Ứng Dụng Backend
 
