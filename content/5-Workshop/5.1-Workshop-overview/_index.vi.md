@@ -1,20 +1,39 @@
 ---
-title : "Giới thiệu"
+title: "Giới Thiệu"
 date: 2025-09-09
-weight : 1
-chapter : false
-pre : " <b> 5.1. </b> "
+weight: 1
+chapter: false
+pre: " <b> 5.1. </b> "
 ---
-#### Giới thiệu về VPC Endpoint
 
-+ Điểm cuối VPC (endpoint) là thiết bị ảo. Chúng là các thành phần VPC có thể mở rộng theo chiều ngang, dự phòng và có tính sẵn sàng cao. Chúng cho phép giao tiếp giữa tài nguyên điện toán của bạn và dịch vụ AWS mà không gây ra rủi ro về tính sẵn sàng.
-+ Tài nguyên điện toán đang chạy trong VPC có thể truy cập Amazon S3 bằng cách sử dụng điểm cuối Gateway. Interface Endpoint  PrivateLink có thể được sử dụng bởi tài nguyên chạy trong VPC hoặc tại TTDL.
+#### Tổng Quan Dự Án Workshop AWS
 
-#### Tổng quan về workshop
+Workshop này hướng dẫn cách triển khai một **ứng dụng web full-stack hoàn chỉnh** trên AWS sử dụng **Infrastructure as Code (CloudFormation)**. Ứng dụng bao gồm:
 
-Trong workshop này, bạn sẽ sử dụng hai VPC.
+- **Backend**: Spring Boot REST API chạy trên các EC2 instances trong private subnets
+- **Frontend**: Ứng dụng React được phục vụ qua CloudFront từ S3
+- **Database**: MySQL RDS instance để lưu trữ dữ liệu
+- **API Gateway**: RESTful API Gateway cho giao tiếp frontend-backend
+- **Load Balancer**: Application Load Balancer cho tính sẵn sàng cao
 
-+ **"VPC Cloud"** dành cho các tài nguyên cloud như Gateway endpoint và EC2 instance để kiểm tra.
-+ **"VPC On-Prem"** mô phỏng môi trường truyền thống như nhà máy hoặc trung tâm dữ liệu của công ty. Một EC2 Instance chạy phần mềm StrongSwan VPN đã được triển khai trong "VPC On-prem" và được cấu hình tự động để thiết lập đường hầm VPN Site-to-Site với AWS Transit Gateway. VPN này mô phỏng kết nối từ một vị trí tại TTDL (on-prem) với AWS cloud. Để giảm thiểu chi phí, chỉ một phiên bản VPN được cung cấp để hỗ trợ workshop này. Khi lập kế hoạch kết nối VPN cho production workloads của bạn, AWS khuyên bạn nên sử dụng nhiều thiết bị VPN để có tính sẵn sàng cao.
+#### Các Thành Phần Kiến Trúc
+
+- **VPC**: VPC tùy chỉnh với public và private subnets trên 2 Availability Zones
+- **EC2 Auto Scaling Group**: Máy chủ ứng dụng backend với khả năng auto-scaling
+- **RDS MySQL**: Dịch vụ database được quản lý cho dữ liệu ứng dụng
+- **S3 Buckets**: Static hosting cho frontend và lưu trữ artifacts cho backend
+- **CloudFront**: CDN cho phân phối nội dung toàn cầu
+- **API Gateway**: RESTful API endpoint với hỗ trợ CORS
+- **VPC Endpoints**: Kết nối riêng tư đến các dịch vụ AWS (S3 Gateway, SSM, SSM Messages, EC2 Messages, CloudWatch Logs)
+- **Systems Manager**: Truy cập an toàn vào EC2 instances mà không cần SSH keys
+
+#### Tính Năng Chính
+
+- **Infrastructure as Code**: Toàn bộ hạ tầng được định nghĩa trong CloudFormation
+- **High Availability**: Triển khai Multi-AZ với Auto Scaling
+- **Bảo Mật**: Private subnets, security groups, IAM roles, VPC endpoints
+- **Giám Sát**: CloudWatch logs, alarms, và metrics
+- **Tối Ưu Chi Phí**: VPC endpoints để giảm chi phí data transfer của NAT Gateway
+- **Khả Năng Mở Rộng**: Auto Scaling dựa trên CPU metrics
 
 ![overview](/images/5-Workshop/5.1-Workshop-overview/diagram1.png)

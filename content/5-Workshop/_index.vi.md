@@ -6,24 +6,40 @@ chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Triển Khai Ứng Dụng Full-Stack trên AWS
 
-#### Tổng quan
+#### Tổng Quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+Workshop này hướng dẫn cách triển khai một **ứng dụng web full-stack hoàn chỉnh** trên AWS sử dụng **Infrastructure as Code (CloudFormation)**. Bạn sẽ học cách xây dựng một kiến trúc sẵn sàng cho production với:
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
+- **Backend**: Spring Boot REST API trên EC2 với Auto Scaling
+- **Frontend**: Ứng dụng React được phục vụ qua CloudFront từ S3
+- **Database**: MySQL RDS để lưu trữ dữ liệu
+- **API Gateway**: RESTful API với hỗ trợ CORS
+- **Load Balancer**: Application Load Balancer cho tính sẵn sàng cao
+- **VPC Endpoints**: Kết nối riêng tư đến các dịch vụ AWS (S3, SSM, CloudWatch)
 
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+#### Điểm Nổi Bật của Kiến Trúc
 
-#### Nội dung
+- **Infrastructure as Code**: Toàn bộ hạ tầng được định nghĩa trong CloudFormation templates
+- **High Availability**: Triển khai Multi-AZ với Auto Scaling Groups
+- **Bảo Mật**: Private subnets, security groups, IAM roles, VPC endpoints
+- **Giám Sát**: CloudWatch logs, alarms, và metrics
+- **Tối Ưu Chi Phí**: VPC endpoints để giảm chi phí data transfer của NAT Gateway
+- **Khả Năng Mở Rộng**: Auto Scaling dựa trên CPU metrics
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+#### Nội Dung Workshop
 
+1. [Tổng Quan Workshop](5.1-Workshop-overview/) - Giới thiệu và tổng quan kiến trúc
+2. [Yêu Cầu Trước](5.2-Prerequiste/) - Quyền IAM và triển khai CloudFormation
+3. [Triển Khai Backend](5.3-Backend-Deployment/) - Build và deploy ứng dụng Spring Boot
+4. [Triển Khai Frontend](5.4-Frontend-Deployment/) - Build và deploy ứng dụng React
+5. [Kiểm Thử và Giám Sát](5.5-Testing-Monitoring/) - Kiểm thử ứng dụng và CloudWatch monitoring
+6. [Dọn Dẹp](5.6-Cleanup/) - Hướng dẫn dọn dẹp tài nguyên
+
+#### Công Nghệ Sử Dụng
+
+- **Dịch Vụ AWS**: VPC, EC2, RDS, S3, CloudFront, API Gateway, ALB, Auto Scaling, CloudWatch, Systems Manager
+- **Backend**: Spring Boot, Java 17, MySQL
+- **Frontend**: React, Vite, TypeScript
+- **Infrastructure**: CloudFormation, IAM, Security Groups

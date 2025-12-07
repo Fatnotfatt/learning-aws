@@ -1,39 +1,100 @@
 ---
-title : "Dọn dẹp tài nguyên"
+title: "Dọn Dẹp"
 date: 2025-09-09
-weight : 6
-chapter : false
-pre : " <b> 5.6. </b> "
+weight: 6
+chapter: false
+pre: " <b> 5.6. </b> "
 ---
-#### Dọn dẹp tài nguyên
 
-Xin chúc mừng bạn đã hoàn thành xong lab này!
-Trong lab này, bạn đã học về các mô hình kiến trúc để truy cập Amazon S3 mà không sử dụng Public Internet.
+#### Chúc Mừng!
 
-+ Bằng cách tạo Gateway endpoint, bạn đã cho phép giao tiếp trực tiếp giữa các tài nguyên EC2 và Amazon S3, mà không đi qua Internet Gateway.
-  Bằng cách tạo Interface endpoint, bạn đã mở rộng kết nối S3 đến các tài nguyên chạy trên trung tâm dữ liệu trên chỗ của bạn thông qua AWS Site-to-Site VPN hoặc Direct Connect.
+Bạn đã hoàn thành thành công việc triển khai Workshop AWS Project! Trong workshop này, bạn đã học:
 
-#### Dọn dẹp
+- Cách triển khai ứng dụng full-stack trên AWS sử dụng CloudFormation
+- Các mẫu kiến trúc cho tính sẵn sàng cao và khả năng mở rộng
+- Thực hành bảo mật tốt nhất với private subnets và VPC endpoints
+- Cấu hình giám sát và auto-scaling
+- Quy trình triển khai frontend và backend
 
-1. Điều hướng đến Hosted Zones trên phía trái của bảng điều khiển Route 53. Nhấp vào tên của  s3.us-east-1.amazonaws.com zone. Nhấp vào Delete và xác nhận việc xóa bằng cách nhập từ khóa "delete".
+#### Dọn Dẹp Tài Nguyên
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/delete-zone.png)
+Để tránh phát sinh chi phí, xóa tất cả tài nguyên được tạo trong workshop này.
 
-2. Disassociate Route 53 Resolver Rule - myS3Rule from "VPC Onprem" and Delete it.
+#### Phương Pháp 1: Xóa CloudFormation Stack (Khuyến Nghị)
 
-![hosted zone](/images/5-Workshop/5.6-Cleanup/vpc.png)
+Cách dễ nhất để dọn dẹp là xóa CloudFormation stack:
 
-4.Mở console của CloudFormation và xóa hai stack CloudFormation mà bạn đã tạo cho bài thực hành này:
+```bash
+aws cloudformation delete-stack \
+  --stack-name workshop-aws-dev \
+  --region ap-southeast-1
+```
 
-+ PLOnpremSetup
-+ PLCloudSetup
+**Lưu ý:** Một số tài nguyên có thể cần xóa thủ công nếu chúng có deletion protection hoặc dependencies.
+
+#### Phương Pháp 2: Dọn Dẹp Thủ Công (nếu cần)
+
+Nếu việc xóa stack thất bại hoặc để lại một số tài nguyên, xóa thủ công:
+
+1. **Dừng EC2 Instances:**
+   ```bash
+   aws autoscaling update-auto-scaling-group \
+     --auto-scaling-group-name <ASG_NAME> \
+     --min-size 0 \
+     --desired-capacity 0 \
+     --region ap-southeast-1
+   ```
+
+2. **Xóa S3 Buckets:**
+   ```bash
+   # Làm trống frontend bucket
+   aws s3 rm s3://workshop-aws-dev-frontend-502310717700-ap-southeast-1/ --recursive
+   aws s3 rb s3://workshop-aws-dev-frontend-502310717700-ap-southeast-1
+   
+   # Làm trống backend bucket
+   aws s3 rm s3://workshop-aws-dev-backend-502310717700-ap-southeast-1/ --recursive
+   aws s3 rb s3://workshop-aws-dev-backend-502310717700-ap-southeast-1
+   ```
+
+3. **Vô Hiệu Hóa và Xóa CloudFront Distribution:**
+   - Đầu tiên vô hiệu hóa distribution (đợi nó được vô hiệu hóa)
+   - Sau đó xóa nó
+
+4. **Xóa RDS Database:**
+   - Tạo snapshot cuối cùng nếu cần
+   - Xóa database instance (có thể mất 10-15 phút)
+
+5. **Xóa API Gateway:**
+   - Xóa REST API
+
+6. **Xóa Load Balancer:**
+   - Xóa Application Load Balancer
+
+7. **Xóa VPC Endpoints:**
+   - Xóa tất cả VPC endpoints
+
+8. **Xóa CloudWatch Logs:**
+   ```bash
+   aws logs delete-log-group \
+     --log-group-name /aws/workshop-aws/dev/application \
+     --region ap-southeast-1
+   ```
+
+#### Xác Minh Dọn Dẹp
+
+Kiểm tra các dịch vụ sau để đảm bảo tất cả tài nguyên đã được xóa:
+
+- **EC2**: Không có instances, security groups, hoặc load balancers
+- **RDS**: Không có database instances
+- **S3**: Không có buckets
+- **CloudFront**: Không có distributions
+- **API Gateway**: Không có APIs
+- **VPC**: VPC và các tài nguyên liên quan (nếu không được quản lý bởi CloudFormation)
+- **CloudWatch**: Không có log groups
+- **IAM**: Xem xét và xóa các roles/policies tùy chỉnh nếu được tạo thủ công
+
+#### Xác Minh Chi Phí
+
+Sau khi dọn dẹp, xác minh trong **AWS Cost Explorer** rằng không có chi phí nào đang phát sinh cho các tài nguyên đã xóa.
 
 ![delete stack](/images/5-Workshop/5.6-Cleanup/delete-stack.png)
-
-5. Xóa các S3 bucket
-
-+ Mở bảng điều khiển S3
-+ Chọn bucket chúng ta đã tạo cho lab, nhấp chuột và xác nhận là empty. Nhấp Delete và xác nhận delete.
-+
-
-![delete s3](/images/5-Workshop/5.6-Cleanup/delete-s3.png)

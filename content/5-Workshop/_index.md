@@ -5,24 +5,41 @@ weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
-# Secure Hybrid Access to S3 using VPC Endpoints
+
+# Full-Stack Web Application Deployment on AWS
 
 #### Overview
 
-**AWS PrivateLink** provides private connectivity to AWS services from VPCs and your on-premises networks, without exposing your traffic to the Public Internet.
+This workshop demonstrates how to deploy a complete **full-stack web application** on AWS using **Infrastructure as Code (CloudFormation)**. You will learn to build a production-ready architecture with:
 
-In this lab, you will learn how to create, configure, and test VPC endpoints that enable your workloads to reach AWS services without traversing the Public Internet.
+- **Backend**: Spring Boot REST API on EC2 with Auto Scaling
+- **Frontend**: React application served via CloudFront from S3
+- **Database**: MySQL RDS for data persistence
+- **API Gateway**: RESTful API with CORS support
+- **Load Balancer**: Application Load Balancer for high availability
+- **VPC Endpoints**: Private connectivity to AWS services (S3, SSM, CloudWatch)
 
-You will create two types of endpoints to access Amazon S3: a Gateway VPC endpoint, and an Interface VPC endpoint. These two types of VPC endpoints offer different benefits depending on if you are accessing Amazon S3 from the cloud or your on-premises location
-+ **Gateway** - Create a gateway endpoint to send traffic to Amazon S3 or DynamoDB using private IP addresses.You route traffic from your VPC to the gateway endpoint using route tables.
-+ **Interface** - Create an interface endpoint to send traffic to endpoint services that use a Network Load Balancer to distribute traffic. Traffic destined for the endpoint service is resolved using DNS.
+#### Architecture Highlights
 
-#### Content
+- **Infrastructure as Code**: Entire infrastructure defined in CloudFormation templates
+- **High Availability**: Multi-AZ deployment with Auto Scaling Groups
+- **Security**: Private subnets, security groups, IAM roles, VPC endpoints
+- **Monitoring**: CloudWatch logs, alarms, and metrics
+- **Cost Optimization**: VPC endpoints to reduce NAT Gateway data transfer costs
+- **Scalability**: Auto Scaling based on CPU metrics
 
-1. [Workshop overview](5.1-Workshop-overview)
-2. [Prerequiste](5.2-Prerequiste/)
-3. [Access S3 from VPC](5.3-S3-vpc/)
-4. [Access S3 from On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (Bonus)](5.5-Policy/)
-6. [Clean up](5.6-Cleanup/)
+#### Workshop Content
 
+1. [Workshop Overview](5.1-Workshop-overview/) - Introduction and architecture overview
+2. [Prerequisites](5.2-Prerequiste/) - IAM permissions and CloudFormation deployment
+3. [Backend Deployment](5.3-Backend-Deployment/) - Build and deploy Spring Boot application
+4. [Frontend Deployment](5.4-Frontend-Deployment/) - Build and deploy React application
+5. [Testing and Monitoring](5.5-Testing-Monitoring/) - Application testing and CloudWatch monitoring
+6. [Clean up](5.6-Cleanup/) - Resource cleanup instructions
+
+#### Technologies Used
+
+- **AWS Services**: VPC, EC2, RDS, S3, CloudFront, API Gateway, ALB, Auto Scaling, CloudWatch, Systems Manager
+- **Backend**: Spring Boot, Java 17, MySQL
+- **Frontend**: React, Vite, TypeScript
+- **Infrastructure**: CloudFormation, IAM, Security Groups

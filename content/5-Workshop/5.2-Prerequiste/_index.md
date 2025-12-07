@@ -1,10 +1,11 @@
 ---
-title : "Prerequiste"
+title: "Prerequiste"
 date: 2025-09-09
-weight : 2 
-chapter : false
-pre : " <b> 5.2. </b> "
+weight: 2
+chapter: false
+pre: " <b> 5.2. </b> "
 ---
+
 #### IAM permissions
 
 Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
@@ -219,25 +220,64 @@ Add the following IAM permission policy to your user account to deploy and clean
 
 #### Provision resources using CloudFormation
 
-In this lab, we will use **N.Virginia region (us-east-1)**.
+In this workshop, we will use **Singapore region (ap-southeast-1)**.
 
-To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template.
+To deploy the infrastructure, use the following command:
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+```bash
+aws cloudformation create-stack \
+  --stack-name workshop-aws-dev \
+  --template-body file://aws/infrastructure.yaml \
+  --parameters file://aws/parameters.json \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --region ap-southeast-1
+```
 
-+ Tick 2 acknowledgement boxes
-+ Choose **Create stack**
+Or update an existing stack:
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+```bash
+aws cloudformation update-stack \
+  --stack-name workshop-aws-dev \
+  --template-body file://aws/infrastructure.yaml \
+  --parameters file://aws/parameters.json \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --region ap-southeast-1
+```
 
-The **ClouddFormation** deployment requires about 15 minutes to complete.
+#### Prerequisites
+
+Before deploying, ensure you have:
+
+- **AWS CLI** installed and configured with appropriate credentials
+- **IAM Permissions** as specified in the IAM permissions section above
+- **Parameters File**: `aws/parameters.json` configured with your values
+- **EC2 Key Pair**: Create a key pair in AWS Console (used for EC2 access, though we'll use SSM Session Manager)
+
+#### CloudFormation Stack Deployment
+
+The **CloudFormation** deployment requires about **20-25 minutes** to complete. The stack will create:
+
+- **1 VPC** with public and private subnets across 2 Availability Zones
+- **1 Auto Scaling Group** with EC2 instances (t3.micro)
+- **1 RDS MySQL** database instance (db.t3.micro)
+- **2 S3 Buckets** (frontend and backend)
+- **1 CloudFront Distribution** for frontend
+- **1 Application Load Balancer** for backend
+- **1 API Gateway** REST API
+- **5 VPC Endpoints** (S3 Gateway, SSM, SSM Messages, EC2 Messages, CloudWatch Logs)
+- **IAM Roles and Policies** for EC2, Lambda, and other services
+- **Security Groups** for network access control
+- **Route Tables** and **Internet Gateway** for networking
+
+#### Verify Deployment
+
+After the stack creation completes, verify the following resources:
+
+- **VPC**: Check VPC console for `workshop-aws-dev-vpc`
+- **EC2 Instances**: Check Auto Scaling Group for running instances
+- **RDS**: Verify database endpoint in RDS console
+- **S3 Buckets**: Confirm frontend and backend buckets exist
+- **CloudFront**: Check distribution status
+- **API Gateway**: Verify REST API is deployed
 
 ![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
-
-+ **2 VPCs** have been created
-
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
-
-+ **3 EC2s** have been created
-
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
