@@ -1,45 +1,99 @@
 ﻿---
 title: "Workshop"
-date: 2025-09-10
+date: 2025-12-08
 weight: 5
 chapter: false
 pre: " <b> 5. </b> "
 ---
 
-# Full-Stack Web Application Deployment on AWS
+# Deploy DNA Analysis Application on AWS
 
 #### Overview
 
-This workshop demonstrates how to deploy a complete **full-stack web application** on AWS using **Infrastructure as Code (CloudFormation)**. You will learn to build a production-ready architecture with:
+In this workshop, you will learn how to deploy a production-ready full-stack DNA Analysis application on AWS using Infrastructure as Code (IaC) with CloudFormation. The application consists of a React frontend, Spring Boot backend, and MySQL database, all deployed with AWS best practices for security, scalability, and cost optimization.
 
-- **Backend**: Spring Boot REST API on EC2 with Auto Scaling
-- **Frontend**: React application served via CloudFront from S3
-- **Database**: MySQL RDS for data persistence
-- **API Gateway**: RESTful API with CORS support
-- **Load Balancer**: Application Load Balancer for high availability
-- **VPC Endpoints**: Private connectivity to AWS services (S3, SSM, CloudWatch)
+**AWS Services Used:**
+- **VPC & Networking**: VPC, Subnets, Internet Gateway, NAT Gateway, VPC Endpoints
+- **Compute**: EC2 Auto Scaling Group, Application Load Balancer
+- **Storage & CDN**: S3 for frontend hosting, CloudFront for global content delivery
+- **Database**: RDS MySQL for data persistence with automated backups
+- **Security**: Security Groups, IAM Roles, AWS Cognito for user authentication
+- **Monitoring**: CloudWatch Logs, Alarms, and SNS notifications
+- **API Management**: API Gateway for secure backend API exposure
 
-#### Architecture Highlights
+#### What You Will Learn
 
-- **Infrastructure as Code**: Entire infrastructure defined in CloudFormation templates
-- **High Availability**: Multi-AZ deployment with Auto Scaling Groups
-- **Security**: Private subnets, security groups, IAM roles, VPC endpoints
-- **Monitoring**: CloudWatch logs, alarms, and metrics
-- **Cost Optimization**: VPC endpoints to reduce NAT Gateway data transfer costs
-- **Scalability**: Auto Scaling based on CPU metrics
+1. **Infrastructure as Code**: Deploy complete AWS infrastructure using CloudFormation templates
+2. **VPC Design**: Create a secure VPC with public and private subnets across multiple availability zones
+3. **Cost Optimization**: Use VPC Endpoints to reduce NAT Gateway costs (~$20-25/month savings)
+4. **Auto Scaling**: Configure EC2 Auto Scaling based on CPU metrics for high availability
+5. **Database Management**: Deploy and configure RDS MySQL with security best practices
+6. **Frontend Deployment**: Host static React website on S3 with CloudFront CDN
+7. **Backend Deployment**: Deploy Spring Boot application on EC2 with systemd service
+8. **Security Best Practices**: Implement security groups, IAM roles, and Cognito authentication
+9. **Monitoring & Logging**: Set up CloudWatch for application monitoring and alerting
 
-#### Workshop Content
+#### Architecture Diagram
 
-1. [Workshop Overview](5.1-Workshop-overview/) - Introduction and architecture overview
-2. [Prerequisites](5.2-Prerequiste/) - IAM permissions and CloudFormation deployment
-3. [Backend Deployment](5.3-Backend-Deployment/) - Build and deploy Spring Boot application
-4. [Frontend Deployment](5.4-Frontend-Deployment/) - Build and deploy React application
-5. [Testing and Monitoring](5.5-Testing-Monitoring/) - Application testing and CloudWatch monitoring
-6. [Clean up](5.6-Cleanup/) - Resource cleanup instructions
+```
+Internet
+    │
+    ├─── CloudFront (CDN) ──> S3 (Frontend)
+    │
+    └─── API Gateway ──> ALB ──> EC2 (Backend) ──> RDS MySQL
+                                  │
+                                  └─── VPC Endpoints (S3, CloudWatch, SSM)
+```
 
-#### Technologies Used
+#### Prerequisites
 
-- **AWS Services**: VPC, EC2, RDS, S3, CloudFront, API Gateway, ALB, Auto Scaling, CloudWatch, Systems Manager
-- **Backend**: Spring Boot, Java 17, MySQL
-- **Frontend**: React, Vite, TypeScript
-- **Infrastructure**: CloudFormation, IAM, Security Groups
+- AWS Account with appropriate permissions (Administrator or equivalent)
+- AWS CLI installed and configured (`aws configure`)
+- EC2 Key Pair created in your AWS region (ap-southeast-1)
+- Basic understanding of AWS services and command line interface
+- Familiarity with CloudFormation concepts
+
+#### Estimated Cost
+
+Running this workshop infrastructure will cost approximately **$8.90/month** (if running 24/7):
+
+| Service | Instance Type | Cost/month (USD) |
+|---------|---------------|------------------|
+| EC2 | t3.nano | $3.50 |
+| RDS MySQL | db.t3.micro | $2.80 |
+| API Gateway | - | $0.50 |
+| S3 + CloudFront | - | $0.80 |
+| Route 53 | - | $0.50 |
+| Cognito | - | $0.10 |
+| CloudWatch | - | $0.30 |
+| CI/CD (CodePipeline) | - | $0.40 |
+| **Total** | | **$8.90** |
+
+**For workshop (2-3 hours):** ~$0.50-1.00
+
+**💡 Cost Saving Tips:**
+- Delete the stack immediately after workshop completion
+- Use AWS Free Tier for eligible services
+- Disable NAT Gateway when not in use (saves ~$32/month)
+- Use VPC Endpoints instead of NAT Gateway for production
+
+#### Workshop Duration
+
+- **Total Time**: 2-3 hours
+- **Infrastructure Deployment**: 15-20 minutes
+- **Application Configuration**: 30-45 minutes
+- **Testing & Validation**: 15-30 minutes
+- **Cleanup**: 5-10 minutes
+
+#### Content
+
+1. [Workshop Overview](5.1-workshop-overview/)
+2. [Prerequisites & Preparation](5.2-prerequisite/)
+3. [Deploy Infrastructure with CloudFormation](5.3-deploy-infrastructure/)
+4. [Configure and Deploy Backend Application](5.4-deploy-backend/)
+5. [Deploy Frontend to S3 and CloudFront](5.5-deploy-frontend/)
+6. [Testing and Validation](5.6-testing/)
+7. [Monitoring and Troubleshooting](5.7-monitoring/)
+8. [CI/CD Pipeline Setup](5.8-cicd-pipeline/)
+9. [Clean Up Resources](5.9-cleanup/)
+
