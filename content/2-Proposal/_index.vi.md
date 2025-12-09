@@ -27,11 +27,11 @@ Phát triển một **nền tảng hỗ trợ hiến máu toàn diện trên AWS
 Giảm 60–70% thời gian tìm kiếm người hiến máu phù hợp. Tăng độ chính xác của thông tin nhóm máu và vị trí. Tối ưu hóa chi phí vận hành với kiến trúc cloud linh hoạt, trả tiền theo sử dụng. Cải thiện phản ứng với các tình huống khẩn cấp về máu
 
 ### 3. Kiến trúc giải pháp
-Nền tảng sử dụng kiến trúc AWS serverless để quản lý dữ liệu từ 5 trạm dựa trên Raspberry Pi, có thể mở rộng lên 15. Dữ liệu được tiếp nhận qua AWS IoT Core, lưu trữ trong S3 data lake, và xử lý bởi AWS Glue Crawlers và các tác vụ ETL để chuyển đổi và tải vào một S3 bucket khác để phân tích. Lambda và API Gateway xử lý bổ sung, trong khi Amplify với Next.js lưu trữ bảng điều khiển, được bảo mật bởi Cognito. Kiến trúc được mô tả chi tiết dưới đây:
+Nền tảng sử dụng kiến trúc AWS cloud toàn diện để hỗ trợ quản lý hiến máu, kết nối người hiến máu với các cơ sở y tế một cách hiệu quả. Hệ thống tích hợp nhiều dịch vụ AWS để cung cấp một giải pháp có thể mở rộng, bảo mật và tiết kiệm chi phí. Kiến trúc được mô tả chi tiết dưới đây:
 
-![Kiến trúc Phần mềm Hỗ trợ Hiến máu](/images/image.jpeg)
+![Kiến trúc Phần mềm Hỗ trợ Hiến máu](image/image.jpeg)
 
-![Kiến trúc Nền tảng Hệ thống Hỗ trợ Hiến máu](/images/image1.jpeg)
+![Kiến trúc Nền tảng Hệ thống Hỗ trợ Hiến máu](image/image1.jpeg)
 
 
 Hệ thống được chia thành **4 lớp chính**:
@@ -74,7 +74,7 @@ Hệ thống được chia thành **4 lớp chính**:
 
 **Yêu cầu kỹ thuật chính:**
 *Frontend:* React/Next.js hoặc Angular (triển khai qua S3/CloudFront).
-*Backend:* Node.js/Express trên EC2, giao tiếp qua REST API Gateway.
+*Backend:* Spring Boot trên EC2, giao tiếp qua REST API Gateway.
 *Database:* Amazon RDS MySQL, tối ưu query và backup định kỳ.
 *CI/CD:* GitLab → CodeBuild → CodePipeline → EC2.
 *Auth:* Cognito (4 vai trò: Guest, Member, Staff, Admin).

@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **First Cloud Journey (FCJ)** from **September 2025** to **November 2025**, I had the opportunity to learn, practice, and apply cloud computing knowledge to a real-world AWS environment.  
+During my internship at **First Cloud AI Journey Office (FCJ)** from **September 2025** to **DECEMBER 2025**, I had the opportunity to learn, practice, and apply cloud computing knowledge to a real-world AWS environment.  
 I participated in the **AWS Cloud Journey internship program**, where I completed a comprehensive 12-week learning journey and deployed a production-ready web application architecture on AWS. Through this project, I improved my skills in **cloud architecture design, AWS services, Infrastructure as Code (CloudFormation), CI/CD pipelines, monitoring and observability, security best practices, and problem-solving in cloud environments**.
 
 The main project involved designing and implementing a complete AWS web application architecture including:

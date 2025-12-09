@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **First Cloud Journey (FCJ)** từ **tháng 9 năm 2025** đến **tháng 11 năm 2025**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức về cloud computing vào môi trường AWS thực tế.  
+Trong suốt thời gian thực tập tại **First Cloud AI Journey Office (FCJ)** từ **tháng 9 năm 2025** đến **tháng 12 năm 2025**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức về cloud computing vào môi trường AWS thực tế.  
 Tôi đã tham gia **chương trình thực tập AWS Cloud Journey**, nơi tôi hoàn thành hành trình học tập 12 tuần và triển khai một kiến trúc web application production-ready trên AWS. Qua dự án này, tôi đã cải thiện kỹ năng về **thiết kế cloud architecture, AWS services, Infrastructure as Code (CloudFormation), CI/CD pipelines, monitoring và observability, security best practices, và giải quyết vấn đề trong môi trường cloud**.
 
 Dự án chính bao gồm thiết kế và triển khai một kiến trúc AWS web application hoàn chỉnh gồm:

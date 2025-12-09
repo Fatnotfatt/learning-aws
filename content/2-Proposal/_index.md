@@ -13,7 +13,7 @@ In this section, you need to summarize the contents of the workshop that you **p
 ## AWS Solution for Blood Donation Support Software
 
 ### 1. Executive Summary
-Blood Donation Support System (BDSS)** is a web platform that supports the management and connection of blood donors with medical facilities. The project was developed by a group of students in Ho Chi Minh City to optimize the blood donation process, reduce the burden of searching for donors and improve the efficiency of medical communication.
+**Blood Donation Support System (BDSS)** is a web platform that supports the management and connection of blood donors with medical facilities. The project was developed by a group of students in Ho Chi Minh City to optimize the blood donation process, reduce the burden of searching for donors and improve the efficiency of medical communication.
 
 The system is built on **AWS Cloud architecture**, using **Amazon EC2**, **Amazon RDS**, **API Gateway**, **Cognito** and **CI/CD Pipeline (GitLab + CodePipeline)** for automatic deployment. BDSS supports four user groups (Guest, Member, Staff, Admin), providing features for searching, registering for blood donation, managing blood banks, tracking blood donation processes and visual reporting.
 
@@ -28,11 +28,11 @@ Developed a **comprehensive blood donation support platform on AWS Cloud**, with
 Reduce the time it takes to find a matching donor by 60–70%. Increase the accuracy of blood type and location information. Optimize operating costs with a flexible, pay-as-you-go cloud architecture. Improve response to blood emergencies
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+The platform employs a comprehensive AWS cloud architecture to support blood donation management, connecting donors with medical facilities efficiently. The system integrates multiple AWS services to provide a scalable, secure, and cost-effective solution. The architecture is detailed below:
 
-![Blood Donation Support Software Architecture](/images/image.jpeg)
+![Blood Donation Support Software Architecture](image/image.jpeg)
 
-![Blood Donation Support System Platform Architecture](/images/image1.jpeg)
+![Blood Donation Support System Platform Architecture](image/image1.jpeg)
 
 
 The system is divided into **4 main layers**:
@@ -73,12 +73,12 @@ The system is divided into **4 main layers**:
 4. *Deployment & Operation (May)*
 * Deploy the official product and monitor with CloudWatch.
 
-**Yêu cầu kỹ thuật chính:**
-*Frontend:* React/Next.js hoặc Angular (deploy qua S3/CloudFront).
-*Backend:* Node.js/Express trên EC2, giao tiếp qua REST API Gateway.
-*Database:* Amazon RDS MySQL, tối ưu query và backup định kỳ.
+**Key Technical Requirements:**
+*Frontend:* React/Next.js or Angular (deploy via S3/CloudFront).
+*Backend:* Spring Boot on EC2, communicate via REST API Gateway.
+*Database:* Amazon RDS MySQL, optimize queries and periodic backups.
 *CI/CD:* GitLab → CodeBuild → CodePipeline → EC2.
-*Auth:* Cognito (4 vai trò: Guest, Member, Staff, Admin).
+*Auth:* Cognito (4 roles: Guest, Member, Staff, Admin).
 *Alert & Logs:* SNS + CloudWatch + CloudTrail.
 
 ### 5. Timeline & Milestones
