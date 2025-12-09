@@ -33,20 +33,6 @@ Công ty tạo điều kiện về thời gian linh hoạt khi cần thiết. Ng
 
 Điều làm mình hài lòng nhất là thành công triển khai một kiến trúc AWS cloud hoàn chỉnh, production-ready cho Hệ thống Hỗ trợ Hiến máu. Từ việc thiết kế kiến trúc ban đầu với VPC, subnets, và security groups, đến triển khai CI/CD pipelines với CodePipeline và CodeBuild, và cuối cùng thấy ứng dụng chạy mượt mà trên EC2 với kết nối RDS database—mỗi cột mốc đều cảm thấy như một thành tựu lớn. Đặc biệt thỏa mãn là giải quyết các thách thức phức tạp như cấu hình API Gateway VPC Links, triển khai SSH-less deployments sử dụng Systems Manager, và tự động hóa CloudFront cache invalidation. Khoảnh khắc khi mình thành công kết nối đến EC2 instance qua Session Manager mà không cần SSH keys và deploy ứng dụng Spring Boot là vô cùng thỏa mãn. Ngoài ra, nhận được phản hồi tích cực từ mentors trong buổi presentation giữa kỳ và thấy hệ thống xử lý các kịch bản thực tế đã xác nhận tất cả công sức bỏ ra.
 
-**Điều bạn nghĩ công ty cần cải thiện cho các thực tập sinh sau?**
-
-Mặc dù trải nghiệm thực tập rất tuyệt vời, mình nghĩ một số cải thiện sau có thể làm nó tốt hơn nữa:
-
-1. **Lộ trình học tập có cấu trúc**: Một roadmap học tập chi tiết theo từng tuần với các lĩnh vực AWS service cụ thể sẽ giúp thực tập sinh lên kế hoạch hành trình học tập tốt hơn.
-
-2. **Hợp tác đồng nghiệp**: Nhiều cơ hội hơn cho thực tập sinh hợp tác trong các dự án hoặc chia sẻ kiến thức qua các buổi peer review sẽ nâng cao trải nghiệm học tập.
-
-3. **Dashboard giám sát chi phí**: Cung cấp cho thực tập sinh một dashboard chung để theo dõi chi phí AWS across tất cả các dự án sẽ giúp phát triển nhận thức về tối ưu hóa chi phí ngay từ đầu.
-
-4. **Template tài liệu**: Các template được định nghĩa trước cho sơ đồ kiến trúc, hướng dẫn triển khai, và tài liệu troubleshooting sẽ giúp duy trì tính nhất quán và chất lượng.
-
-5. **Check-in thường xuyên**: Nhiều buổi check-in một-một hơn (hai tuần một lần thay vì hàng tháng) sẽ giúp phát hiện vấn đề sớm hơn và cung cấp hướng dẫn tốt hơn.
-
 **Nếu giới thiệu cho bạn bè, bạn có khuyên họ thực tập ở đây không? Vì sao?**
 
 Chắc chắn, mình sẽ rất khuyến khích bạn bè tham gia chương trình thực tập này nếu họ quan tâm đến cloud computing và AWS. Đây là lý do:
@@ -67,20 +53,6 @@ Nhìn chung, chương trình thực tập này hoàn hảo cho sinh viên muốn
 ---
 
 ### Đề xuất & mong muốn
-
-**Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?**
-
-1. **Chuỗi Workshop**: Tổ chức các workshop hàng tháng về các AWS services cụ thể (ví dụ: "Deep Dive vào CloudWatch" hoặc "Advanced VPC Networking") với các lab thực hành.
-
-2. **Diễn giả khách mời**: Mời các AWS Solutions Architects hoặc kỹ sư từ các công ty đối tác để chia sẻ case studies thực tế và insights ngành.
-
-3. **Showcase dự án**: Tổ chức một demo day vào cuối kỳ thực tập nơi thực tập sinh có thể trình bày dự án của mình trước toàn bộ team và nhận phản hồi.
-
-4. **Buổi Code Review**: Các buổi code review thường xuyên nơi mentors review CloudFormation templates, buildspec files, và deployment scripts sẽ cải thiện chất lượng code.
-
-5. **Thử thách Tối ưu hóa Chi phí**: Giới thiệu một thử thách hàng tháng để tối ưu hóa chi phí AWS trong khi duy trì chức năng, với sự công nhận cho các giải pháp sáng tạo nhất.
-
-6. **Thư viện Tài nguyên**: Tạo một knowledge base chung với các hướng dẫn troubleshooting phổ biến, patterns kiến trúc, và best practices được biên soạn từ tất cả các dự án thực tập sinh.
 
 **Bạn có muốn tiếp tục chương trình này trong tương lai?**
 

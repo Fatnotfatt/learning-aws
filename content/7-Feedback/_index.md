@@ -35,20 +35,6 @@ The company offers flexible working hours when needed. In addition, having the o
 
 The most satisfying aspect was successfully deploying a complete, production-ready AWS cloud architecture for the Blood Donation Support System. From designing the initial architecture with VPC, subnets, and security groups, to implementing CI/CD pipelines with CodePipeline and CodeBuild, and finally seeing the application running smoothly on EC2 with RDS database connectivity—every milestone felt like a significant achievement. Particularly rewarding was solving complex challenges like configuring API Gateway VPC Links, implementing SSH-less deployments using Systems Manager, and automating CloudFront cache invalidation. The moment when I successfully connected to the EC2 instance via Session Manager without SSH keys and deployed the Spring Boot application was incredibly satisfying. Additionally, receiving positive feedback from mentors during the mid-stage presentation and seeing the system handle real-world scenarios validated all the hard work.
 
-**What do you think the company should improve for future interns?**
-
-While the internship experience was excellent overall, I believe a few enhancements could make it even better:
-
-1. **Structured Learning Path**: A more detailed week-by-week learning roadmap with specific AWS service focus areas would help interns plan their learning journey better.
-
-2. **Peer Collaboration**: More opportunities for interns to collaborate on projects or share knowledge through peer review sessions would enhance the learning experience.
-
-3. **Cost Monitoring Dashboard**: Providing interns with a shared dashboard to monitor AWS costs across all projects would help develop cost optimization awareness from the start.
-
-4. **Documentation Templates**: Pre-defined templates for architecture diagrams, deployment guides, and troubleshooting documentation would help maintain consistency and quality.
-
-5. **Regular Check-ins**: More frequent one-on-one check-ins (bi-weekly instead of monthly) would help catch issues earlier and provide better guidance.
-
 **If recommending to a friend, would you suggest they intern here? Why or why not?**
 
 Absolutely, I would highly recommend this internship program to friends interested in cloud computing and AWS. Here's why:
@@ -69,20 +55,6 @@ Overall, this internship is perfect for students who want to transition from aca
 ---
 
 ### Suggestions & Expectations
-
-**Do you have any suggestions to improve the internship experience?**
-
-1. **Workshop Series**: Organize monthly workshops on specific AWS services (e.g., "Deep Dive into CloudWatch" or "Advanced VPC Networking") with hands-on labs.
-
-2. **Guest Speakers**: Invite AWS Solutions Architects or engineers from partner companies to share real-world case studies and industry insights.
-
-3. **Project Showcase**: Organize a demo day at the end of the internship where interns can present their projects to the broader team and receive feedback.
-
-4. **Code Review Sessions**: Regular code review sessions where mentors review CloudFormation templates, buildspec files, and deployment scripts would improve code quality.
-
-5. **Cost Optimization Challenge**: Introduce a monthly challenge to optimize AWS costs while maintaining functionality, with recognition for the most innovative solutions.
-
-6. **Resource Library**: Create a shared knowledge base with common troubleshooting guides, architecture patterns, and best practices compiled from all intern projects.
 
 **Would you like to continue this program in the future?**
 
